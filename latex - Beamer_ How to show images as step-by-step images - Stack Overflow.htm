@@ -1,0 +1,1781 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images -->
+<html itemscope="" itemtype="http://schema.org/QAPage"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>latex - Beamer: How to show images as step-by-step images - Stack Overflow</title>
+    <link rel="shortcut icon" href="https://cdn.sstatic.net/Sites/stackoverflow/img/favicon.ico?v=4f32ecc8f43d">
+    <link rel="apple-touch-icon image_src" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+    <link rel="search" type="application/opensearchdescription+xml" title="Stack Overflow" href="https://stackoverflow.com/opensearch.xml">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+        <meta name="twitter:domain" content="stackoverflow.com">
+
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon@2.png?v=73d79a89bded">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="Beamer: How to show images as step-by-step images">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="I&#39;m trying to make a presentation using the Beamer class. I want to show a simple list of images, one by one in one frame, just like when you use itemize&amp;lt;+-&gt;.
+
+I have no problem showing the imag...">
+    <meta property="og:url" content="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images">
+    <link rel="canonical" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images">
+
+    
+    
+    <script type="text/javascript" async="" src="https://engine.adzerk.net/ados?t=1500314831150&amp;request={%22Placements%22:[{%22A%22:22,%22S%22:8277,%22D%22:%22adzerk864382273%22,%22AT%22:4,%22Z%22:[43]},{%22A%22:22,%22S%22:8277,%22D%22:%22adzerk1358743264%22,%22AT%22:4,%22Z%22:[44]},{%22A%22:22,%22S%22:8277,%22D%22:%22adzerk1846353128%22,%22ATA%22:[5,17,2221,1129,43],%22Z%22:[45]}],%22Keywords%22:%22image%2Clatex%2Cbeamer%22,%22Referrer%22:%22https%3A%2F%2Fwww.google.com.br%2F%22,%22IsAsync%22:true}"></script><script async="" src="https://secure.quantserve.com/quant.js"></script><script async="" src="https://sb.scorecardresearch.com/beacon.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/ados.js"></script><script src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/jquery.min.js"></script>
+    <script src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/stub.en.js"></script>
+    <link rel="stylesheet" type="text/css" href="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/all.css">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question &#39;Beamer: How to show images as step-by-step images&#39;" href="https://stackoverflow.com/feeds/question/4683093">
+            <meta name="twitter:app:country" content="US">
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:iphone" content="871299723">
+            <meta name="twitter:app:url:iphone" content="se-zaphod://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images">
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:ipad" content="871299723">
+            <meta name="twitter:app:url:ipad" content="se-zaphod://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images">
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+                                    
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.initSnippetRenderer();
+                    });
+                    
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:4,shownCommentCount:4,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:4683093});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('1', '4683093');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text', true); });
+
+            });
+        </script>
+
+
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","serverTime":1500314828,"routeName":"Questions/Show","site":{"name":"Stack Overflow","description":"Q&A for professional and enthusiast programmers","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdchgIAAAAAAJwGpIzRQSOFaO0pU6s44Xt8aTwc","recaptchaAudioLang":"en","enableNewTagCreationWarning":true,"insertSpaceAfterNameTabCompletion":false,"id":1,"enableInsertDocLinkDialog":true,"childUrl":"https://meta.stackoverflow.com","enableSocialMediaInSharePopup":true,"protocol":"https"},"user":{"fkey":"38aa3371430e29d838c8fa86b0359946","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true,"canSeeNewHeaderDesign":true},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}},"story":{"minCompleteBodyLength":75,"likedTagsMaxLength":300,"dislikedTagsMaxLength":300}}, {"site":{"allowImageUploads":true,"enableUserHovercards":true,"styleCode":true,"enableNewLinkInsertDialog":true,"enableImgurHttps":true,"forceHttpsImages":true},"comments":{},"userProfile":{"openGraphAPIKey":"58740831ad23540e00c58987"},"tags":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true},"flags":{"allowRetractingFlags":true},"snippets":{"snippetsEnabled":true,"renderDomain":"stacksnippets.net"},"markdown":{"asteriskIntraWordEmphasis":true},"monitoring":{"clientTimingsAbsoluteTimeout":30000,"clientTimingsDebounceTimeout":1000}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"d538aedc4e03","js/moderator.en.js":"ca0fee054ae6","js/full-anon.en.js":"d2a94baa1f13","js/full.en.js":"8c31c78ae5d8","js/wmd.en.js":"3a23f8720276","js/third-party/jquery.autocomplete.min.js":"d3b8fa7fdf74","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"ba2685451c38","js/help.en.js":"a56fdf9b9ff2","js/tageditor.en.js":"248fce004255","js/tageditornew.en.js":"1670f3bd8cf2","js/inline-tag-editing.en.js":"7581a98341e4","js/revisions.en.js":"47de10a8358f","js/review.en.js":"f15b2907356b","js/tagsuggestions.en.js":"b278f9a0b23b","js/post-validation.en.js":"8d20a2f11b0d","js/explore-qlist.en.js":"e71f14781288","js/events.en.js":"0bd6bf0bed8f","js/keyboard-shortcuts.en.js":"6668f308be33","js/external-editor.en.js":"3e5baf662544","js/adops.en.js":"9a6a7812a212","js/external-editor.en.js":"3e5baf662544","js/snippet-javascript.en.js":"6396a6cc51fa","js/snippet-javascript-codemirror.en.js":"49f47b7dc1ef"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+    <noscript id="noscript-css">&lt;style type="text/css"&gt;body,.so-header{margin-top:1.9em}&lt;/style&gt;</noscript>
+<script async="" src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/full-anon.en.js"></script><style type="text/css">:root div[id^="adzerk"], :root topadblock, :root td[valign="top"] > .mainmenu[style="padding:10px 0 0 0 !important;"], :root input[onclick^="window.open('http://www.FriendlyDuck.com/AF_"], :root img[alt^="Fuckbook"], :root iframe[src^="http://cdn1.adexprt.com/"], :root iframe[src^="http://ad.yieldmanager.com/"], :root iframe[id^="google_ads_iframe"], :root div[id^="proadszone-"], :root div[id^="mainads"], :root div[id^="lazyad-"], :root div[id^="google_dfp_"], :root div[id^="dmRosAdWrapper"], :root div[id^="div_ad_stack_"], :root div[id^="div-adtech-ad-"], :root div[id^="cns_ads_"], :root div[id^="ads300_250-widget"], :root iframe[src^="http://cdn2.adexprt.com/"], :root div[id^="ads300_100-widget"], :root div[id^="ads250_250-widget"], :root div[id^="adrotate_widgets-"], :root div[id^="ad_script_"], :root div[id^="ad-server-"], :root div[id^="acm-ad-tag-"], :root div[id^="MarketGid"], :root div[id^="ADV-SLOT-"], :root div[class^="proadszone-"], :root div[class$="dealnews"] > .dealnews, :root div > [class][onclick*=".updateAnalyticsEvents"], :root bottomadblock, :root aside[id^="div-gpt-ad"], :root a[target="_blank"][href^="http://api.taboola.com/"], :root a[style="display:block;width:300px;min-height:250px"][href^="http://li.cnet.com/click?"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[onmousedown^="this.href='http://staffpicks.outbrain.com/network/redir?"][target="_blank"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[onmousedown^="this.href='/wp-content/embed-ad-content/"], :root iframe[src^="http://static.mozo.com.au/strips/"], :root a[href^="https://www.spyoff.com/"], :root a[href^="https://www.share-online.biz/affiliate/"], :root a[href^="https://www.oboom.com/ad/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root a[href^="https://www.firstload.com/affiliate/"], :root a[href^="https://www.adskeeper.co.uk/"], :root a[href^="https://trust.zone/"], :root div[class^="gemini-ad"], :root a[href^="https://torguard.net/aff.php"], :root div[id^="YFBMSN"], :root a[href^="https://secure.eveonline.com/ft/?aid="], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://go.ad2up.com/"], :root a[href^="https://farm.plista.com/pets"], :root a[href^="https://click.plista.com/pets"], :root a[href^="https://affiliates.bet-at-home.com/processing/"], :root a[href^="https://adhealers.com/"], :root a[href^="https://ad.atdmt.com/"], :root div[itemtype="http://schema.org/WPAdBlock"], :root a[href^="http://xads.zedo.com/"], :root a[href^="http://wxdownloadmanager.com/dl/"], :root a[href^="http://www1.clickdownloader.com/"], :root a[href^="http://www.zergnet.com/i/"], :root a[href^="http://www.usearchmedia.com/signup?"], :root a[href^="http://www.torntv-downloader.com/"], :root a[href^="http://www.tirerack.com/affiliates/"], :root a[href^="http://www.text-link-ads.com/"], :root div[id^="div_openx_ad_"], :root a[href^="http://www.streamate.com/exports/"], :root a[href^="http://www.sfippa.com/"], :root a[href^="http://bluehost.com/track/"], :root a[href^="http://www.seekbang.com/cs/"], :root a[href^="http://www.quick-torrent.com/download.html?aff"], :root #flowplayer > div[style="z-index: 208; position: absolute; width: 300px; height: 275px; left: 222.5px; top: 85px;"], :root a[href^="http://www.plus500.com/?id="], :root div[id^="google_ads_iframe_"], :root a[href^="http://www.affiliates1128.com/processing/"], :root a[href^="http://www.pheedo.com/"], :root a[href^="http://guideways.info/"], :root #\5f _nq__hh[style="display:block!important"], :root a[href^="http://www.on2url.com/app/adtrack.asp"], :root a[href^="http://www.myvpn.pro/"], :root a[href^="http://liversely.net/"], :root a[href^="http://www.my-dirty-hobby.com/?sub="], :root a[href^="http://www.download-provider.org/"], :root a[href^="http://www.installads.net/"], :root a[href^="http://www.incredimail.com/?id="], :root a[href^="http://tracking.toroadvertising.com/"], :root a[href^="http://www.graboid.com/affiliates/"], :root a[href^="http://www.gamebookers.com/cgi-bin/intro.cgi?"], :root a[href^="http://www.friendlyquacks.com/"], :root a[href^="http://cdn3.adbrau.com/"], :root a[href^="http://www.friendlyadvertisements.com/"], :root a[href^="http://ul.to/ref/"], :root a[href^="http://www.freefilesdownloader.com/"], :root a[href^="http://www.fpcTraffic2.com/blind/in.cgi?"], :root a[href^="http://www.fonts.com/BannerScript/"], :root a[href^="http://www.fleshlight.com/"], :root a[href^="http://www.mysuperpharm.com/"], :root a[href^="http://www.firstload.de/affiliate/"], :root a[href^="http://www.firstload.com/affiliate/"], :root a[href*=".trust.zone"], :root a[href^="http://www.firstclass-download.com/"], :root a[href^="http://www.faceporn.net/free?"], :root a[href^="http://clicks.binarypromos.com/"], :root a[href^="http://www.downloadplayer1.com/"], :root a[href^="http://www.down1oads.com/"], :root a[href^="http://www.liutilities.com/"], :root a[href^="http://tracking.deltamediallc.com/"], :root a[href^="http://www.dl-provider.com/search/"], :root a[href^="http://www.coinducks.com/AF_"], :root a[href^="https://bs.serving-sys.com"], :root a[href^="https://atomidownload.com/"], :root a[href^="http://adserver.itsfogo.com/"], :root a[href^="http://adtransfer.net/"], :root a[href^="http://www.bet365.com/dl/~offer?affiliate="], :root a[href^="http://www.badoink.com/go.php?"], :root div[id^="advads-"], :root a[href^="http://www.ringtonematcher.com/"], :root a[href^="http://www.adshost2.com/"], :root a[href^="http://www.adbrite.com/mb/commerce/purchase_form.php?"], :root a[href^="http://www.FriendlyDuck.com/AF_"], :root a[href^="http://www.brightwheel.info/"], :root a[href^="http://www.1clickdownloader.com/"], :root a[href^="http://www.123-reg.co.uk/affiliate2.cgi"], :root a[href^="http://prousa.work/"], :root a[href^="http://see-work.info/"], :root a[href^="http://websitedhoome.com/"], :root a[href^="http://www.paddypower.com/?AFF_ID="], :root a[href^="http://uploaded.net/ref/"], :root a[href^="http://track.adform.net/"], :root a[href^="http://t.wowtrk.com/"], :root a[href^="http://adprovider.adlure.net/"], :root a[href^="http://tezfiles.com/pr/"], :root a[href^="http://go.seomojo.com/tracking202/"], :root a[href^="http://www.revenuehits.com/"], :root a[href^="http://www.easydownloadnow.com/"], :root .mw > #rcnt > #center_col > #taw > .c, :root a[href^="http://taboola-"][href*="/redirect.php?app.type="], :root a[href^="http://t.mdn2015x3.com/"], :root a[href^="http://clickandjoinyourgirl.com/"], :root a[href^="http://webtrackerplus.com/"], :root a[href^="http://b.bestcompleteusa.info/"], :root a[href^="http://t.mdn2015x2.com/"], :root a[href^="http://sharesuper.info/"], :root a[href^="http://www.bet365.com/home/default.asp?affiliate="], :root a[href^="http://getlinksinaseconds.com/"], :root a[href^="http://secure.signup-way.com/"], :root a[href^="http://secure.signup-page.com/"], :root [onclick^="window.open('http://adultfriendfinder.com/search/"], :root a[href^="http://secure.hostgator.com/~affiliat/"], :root .ra[width="30%"][align="right"] + table[width="70%"][cellpadding="0"], :root a[href^="http://searchtabnew.com/"], :root a[href^="http://ryushare.com/affiliate.python"], :root a[href^="http://record.commissionking.com/"], :root a[href^="http://record.betsafe.com/"], :root a[href^="http://pubads.g.doubleclick.net/"], :root a[href^="http://www.epicgameads.com/"], :root a[href^="http://gca.sh/user/register?ref="], :root a[href^="http://promos.bwin.com/"], :root a[href^="https://www.FriendlyDuck.com/AF_"], :root a[href^="http://prochina.link/"], :root a[href^="http://z1.zedo.com/"], :root a[href^="http://pokershibes.com/index.php?ref="], :root a[href^="http://n217adserv.com/"], :root a[href^="http://mojofun.info/"], :root a[href^="http://mmo123.co/"], :root .plistaList > .itemLinkPET, :root a[href^="http://mgid.com/"], :root a[href^="http://marketgid.com"], :root a[href^="http://www.socialsex.com/"], :root a[href^="http://www.affbuzzads.com/affiliate/"], :root a[href*=".qertewrt.com/"], :root a[href^="http://lp.ncdownloader.com/"], :root a[href*=".adsrv.eacdn.com/"] > img, :root a[href^="http://lp.ilivid.com/"], :root #rhs_block .xpdopen > ._OKe > div > .mod > ._yYf, :root a[href^="http://lp.ezdownloadpro.info/"], :root a[href^="http://liversely.com/"], :root a[href^="http://latestdownloads.net/download.php?"], :root a[href^="http://keep2share.cc/pr/"], :root a[href^="http://k2s.cc/pr/"], :root a[href^="http://join3.bannedsextapes.com/track/"], :root a[href^="http://green.trafficinvest.com/"], :root a[href^="http://jobitem.org/"], :root a[href^="//adbit.co/?a=Advertise&"], :root a[href^="http://istri.it/?"], :root a[href^="https://dltags.com/"], :root a[href^="http://onclickads.net/"], :root a[href^="http://www.terraclicks.com/"], :root a[href^="http://internalredirect.site/"], :root a[href^="http://cdn.adstract.com/"], :root a[href^="http://hyperlinksecure.com/go/"], :root a[href^="http://engine.newsmaxfeednetwork.com/"], :root a[href^="http://www.sex.com/pics/?utm_"], :root a[href^="http://greensmoke.com/"], :root a[href^="http://www.downloadthesefiles.com/"], :root a[href^="http://farm.plista.com/pets"], :root a[href^="http://mo8mwxi1.com/"], :root a[href^="http://go.oclaserver.com/"], :root .__y_elastic .__y_item, :root a[href^="http://go.mobisla.com/"], :root a[href^="http://go.ad2up.com/"], :root a[href^="http://games.ucoz.ru/"][target="_blank"], :root div[id^="div-gpt-ad"], :root a[href^="http://fusionads.net"], :root a[href^="http://us.marketgid.com"], :root a[href^="http://imads.integral-marketing.com/"], :root a[href^="http://freesoftwarelive.com/"], :root a[href^="http://adtrackone.eu/"], :root a[href^="http://finaljuyu.com/"], :root a[href^="http://tour.affbuzzads.com/"], :root a[href^="http://fileupnow.rocks/"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="http://www.roboform.com/php/land.php"], :root a[href^="http://fileloadr.com/"], :root a[href^="http://elitefuckbook.com/"], :root div[id^="ads300_600-widget"], :root a[href^="http://web.adblade.com/"], :root a[href^="http://elite-sex-finder.com/?"], :root a[href^="http://eclkmpsa.com/"], :root a[href^="http://www.menaon.com/installs/"], :root a[href^="http://duckcash.eu/AF_"], :root a[href^="http://dethao.com/"], :root a[href^="http://www.linkbucks.com/referral/"], :root a[href^="http://ddownload39.club/"], :root a[href^="http://www.moneyducks.com/"], :root a[href^="http://data.linoleictanzaniatitanic.com/"], :root a[href^="http://data.committeemenencyclopedicrepertory.info/"], :root a[href^="https://understandsolar.com/signup/?lead_source="][href*="&tracking_code="], :root a[href^="http://hdplugin.flashplayer-updates.com/"], :root a[href^="http://data.ad.yieldmanager.net/"], :root a[href^="http://www.babylon.com/welcome/index?affID"], :root a[href^="http://www.richducks.com/"], :root a[href^="http://campaign.bharatmatrimony.com/track/"], :root #content > #center > .dose > .dosesingle, :root a[href^="http://d2.zedo.com/"], :root a[href^="http://cdn.adsrvmedia.net/"], :root a[href^="http://cpaway.afftrack.com/"], :root a[href^="http://contractallsticker.net/"], :root a[href^="http://codec.codecm.com/"], :root div[id^="ads120_600-widget"], :root a[href^="http://clk.directrev.com/"], :root a[href^="http://refer.webhostingbuzz.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="http://clickserv.sitescout.com/"], :root a[href^="http://clicks.guamwnvgashbkashawhgkhahshmashcas.pw/"], :root a[href^="https://dediseedbox.com/clients/aff.php?"], :root a[href^="http://www.wantstraffic.com/"], :root .lads[width="100%"][style="background:#FFF8DD"], :root a[href^="http://databass.info/"], :root a[href^="http://www.urmediazone.com/signup"], :root a[href^="http://ads.pheedo.com/"], :root a[href^="http://click.plista.com/pets"], :root a[href^="http://download-performance.com/"], :root .__ywvr .__y_item, :root a[href^="http://track.incognitovpn.com/"], :root a[href^="http://click.guamwnvgashbkashawhgkhahshmashcas.pw/"], :root a[href^="http://rekoverr.com/"], :root [lazy-ad="lefttop_banner"], :root a[href^="http://servicegetbook.net/"], :root a[href^="http://cinema.friendscout24.de?"], :root a[href^="http://360ads.go2cloud.org/"], :root a[href^="http://dftrck.com/"], :root a[href^="http://casino-x.com/?partner"], :root a[href^="http://www.clkads.com/adServe/"], :root a[href^="http://ads.expekt.com/affiliates/"], :root a[href^="http://callville.xyz/"], :root a[href^="http://serve.williamhill.com/promoRedirect?"], :root a[href^="http://feedads.g.doubleclick.net/"], :root a[href^="http://bs.serving-sys.com/"], :root a[href^="https://trklvs.com/"], :root a[href^="http://bestorican.com/"], :root a[href^="http://www.getyourguide.com/?partner_id="], :root a[href^="http://bcp.crwdcntrl.net/"], :root a[href^="http://install.securewebsiteaccess.com/"], :root .inlineNewsletterSubscription + .inlineNewsletterSubscription div[class$="_item"], :root a[href^="http://clkmon.com/adServe/"], :root a[href^="http://www.torntvdl.com/"], :root a[href^="http://at.atwola.com/"], :root ADS-RIGHT, :root a[href^="http://affiliates.score-affiliates.com/"], :root #rhs_block .mod > .luhb-div > div[data-async-type="updateHotelBookingModule"], :root a[href^="http://affiliate.glbtracker.com/"], :root a[href^="http://www.fducks.com/"], :root .icons-rss-feed + .icons-rss-feed div[class$="_item"], :root a[href^="http://aflrm.com/"], :root a[href^="http://partner.sbaffiliates.com/"], :root a[href^="http://affiliate.coral.co.uk/processing/"], :root a[href^="http://api.content.ad/"], :root a[href^="http://zevera.com/afi.html"], :root a[href^="http://adsrv.keycaptcha.com"], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://www.mobileandinternetadvertising.com/"], :root a[href^="http://adserving.unibet.com/"], :root a[href^="http://chaturbate.com/affiliates/"], :root a[href^="http://adserving.liveuniversenetwork.com/"], :root a[href^="http://adserver.adtechus.com/"], :root a[href^="http://buysellads.com/"], :root a[href^="http://down1oads.com/"], :root #\5f _mom_ad_12, :root a[href^="http://ads.integral-marketing.com/"], :root a[href^="http://adserver.adtech.de/"], :root a[href^="http://ads.betfair.com/redirect.aspx?"], :root a[href^="http://ads.affbuzzads.com/"], :root a[href^="http://online.ladbrokes.com/promoRedirect?"], :root a[href^="http://ads.ad-center.com/"], :root a[href^="http://adrunnr.com/"], :root a[href^="https://www.dsct1.com/"], :root a[href^="http://amzn.to/"] > img[src^="data"], :root a[href^="http://www.liversely.net/"], :root a[href^="http://admingame.info/"], :root div[id^="q1-adset-"], :root a[href^="http://adfarm.mediaplex.com/"], :root #center_col > #taw > #tvcap > .rscontainer, :root a[href^="http://adf.ly/?id="], :root a[href^="http://goldmoney.com/?gmrefcode="], :root a[href^="http://adexprt.me/"], :root a[href^="http://www.flashx.tv/downloadthis"], :root a[href^="http://affiliates.pinnaclesports.com/processing/"], :root a[href^="http://ad.yieldmanager.com/"], :root a[href^="http://ad.doubleclick.net/"], :root #resultspanel > #topads, :root a[href^="http://www.drowle.com/"], :root a[href^="http://abc2.mobile-10.com/"], :root input[onclick^="window.open('http://www.friendlyduck.com/AF_"], :root a[href^="http://srvpub.com/"], :root a[href^="http://a.adquantix.com/"], :root a[href^="http://NowDownloadAll.com"], :root a[href^="http://www.ducksnetwork.com/"], :root a[href^="http://3wr110.net/"], :root a[href^="//ads.ad-center.com/"], :root a[href^="http://1phads.com/"], :root #center_col > #resultStats + div[style="border:1px solid #dedede;margin-bottom:11px;padding:5px 7px 5px 6px"], :root a[href^="https://www.secureupload.eu/suprerefid="], :root a[href^="http://yads.zedo.com/"], :root #mbEnd[cellspacing="0"][cellpadding="0"], :root a[href^="http://adclick.g.doubleclick.net/"], :root a[href^="//t.MtagMonetizationA.com/"], :root #\5f _mom_ad_2, :root a[href^="http://ads.activtrades.com/"], :root a[href^="//api.ad-goi.com/"], :root a[href^="http://www.clickansave.net/"], :root a[href^="http://get.slickvpn.com/"], :root [onclick*="content.ad/"], :root a[href^="http://galleries.securewebsiteaccess.com/"], :root a[href^=" http://n47adshostnet.com/"], :root a[href^="http://linksnappy.com/?ref="], :root #main_col > #center_col div[style="font-size:14px;margin:0 4px;padding:1px 5px;background:#fff7ed"], :root a[href^="http://adtrack123.pl/"], :root .section-result[data-result-ad-type], :root script[src^="http://free-shoutbox.net/app/webroot/shoutbox/sb.php?shoutbox="] + #freeshoutbox_content, :root a[href^=" http://ads.ad-center.com/"], :root .GPMV2XEDA2 > .GPMV2XEDP1 > .GPMV2XEDJBB, :root a[href*="onclkds."], :root a[href^="http://www.idownloadplay.com/"], :root a[href^="//srv.buysellads.com/"], :root a[href^="http://www.xmediaserve.com/"], :root a[href^="http://www.sex.com/videos/?utm_"], :root div[itemtype="http://www.schema.org/WPAdBlock"], :root .__zinit .__y_item, :root .ch[onclick="ga(this,event)"], :root a[href^="https://ad.doubleclick.net/"], :root a[href*="letsadvertisetogether.com"], :root a[href^="http://fsoft4down.com/"], :root a[href*="ad2upapp.com/"], :root .ob_container a[data-redirect^="http://paid.outbrain.com/network/redir?"], :root #mn #center_col > div > h2.spon:first-child, :root a[href*="=Adtracker"], :root a[href^="https://www.popads.net/users/"], :root a[href^="http://tracking.crazylead.com/"], :root a[href*="/cmd.php?ad="], :root a[href^="http://www.myfreepaysite.com/sfw_int.php?aid"], :root a[href^="http://galleries.pinballpublishernetwork.com/"], :root .ob_dual_right > .ob_ads_header ~ .odb_div, :root a[href*=".adk2x.com/"], :root a[href^="http://api.ringtonematcher.com/"], :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root a[href^="http://www.twinplan.com/AF_"], :root a[href^="http://n.admagnet.net/"], :root a[href^="http://connectlinking6.com/"], :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://www.duckcash.eu/AF_"], :root a[href^="http://bc.vc/?r="], :root a[href^="//www.mgid.com/"], :root a[href^="http://www.pinkvisualgames.com/?revid="], :root .__y_inner > .__y_item, :root .jobs-information-call-to-action + .jobs-information-call-to-action div[class$="_item"], :root AMP-AD, :root .widget-pane-section-result[data-result-ad-type], :root #center_col > #main > .dfrd > .mnr-c > .c._oc._zs, :root .trc_rbox_div .syndicatedItemUB, :root .ob_container .item-container-obpd, :root a[href^="http://centertrust.xyz/"], :root .trc_rbox_div .syndicatedItem, :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root #tads + div + .c, :root a[href^="http://www.accuserveadsystem.com/accuserve-go.php?"], :root a[href^="http://c.ketads.com/"], :root .trc_rbox .syndicatedItem, :root a[href^="http://pwrads.net/"], :root a[href*="friendlyduck.com"], :root #mn div[style="position:relative"] > #center_col > div > ._dPg, :root .rhsvw[style="background-color:#fff;margin:0 0 14px;padding-bottom:1px;padding-top:1px;"], :root a[data-url^="http://paid.outbrain.com/network/redir?"], :root a[href^="http://www.fbooksluts.com/"], :root a[href^="http://c.actiondesk.com/"], :root .ra[align="right"][width="30%"], :root a[href^="https://trackjs.com/?utm_source"], :root AFS-AD, :root .ra[align="left"][width="30%"], :root .plista_widget_belowArticleRelaunch_item[data-type="pet"], :root #main-content > [style="padding:10px 0 0 0 !important;"], :root a[href^="http://www.webtrackerplus.com/"], :root .GJJKPX2N1 > .GJJKPX2M1 > .GJJKPX2P4, :root a[href^="http://ad.au.doubleclick.net/"], :root a[href^="http://record.sportsbetaffiliates.com.au/"], :root #topstuff > #tads, :root a[href^="http://www.1clickmoviedownloader.info/"], :root .mw > #rcnt > #center_col > #taw > #tvcap > .c, :root a[href^="http://affiliate.godaddy.com/"], :root a[href^="http://www.sex.com/?utm_"], :root #mn #center_col > div > h2.spon:first-child + ol:last-child, :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="http://www.downloadweb.org/"], :root .plistaList > .plista_widget_underArticle_item[data-type="pet"], :root #center_col > #res > #topstuff + #search > div > #ires > #rso > #flun, :root a[href^="http://adultfriendfinder.com/p/register.cgi?pid="], :root a[href^="http://www.yourfuckbook.com/?"], :root a[href^="http://ads.sprintrade.com/"], :root .GHOFUQ5BG2 > .GHOFUQ5BF2 > .GHOFUQ5BG5, :root a[href^="http://ad-apac.doubleclick.net/"], :root .gbfwa > div[class$="_item"], :root a[href^="http://prochina.space/"], :root a[href^="http://www.uniblue.com/cm/"], :root a[data-redirect^="http://click.plista.com/pets"], :root #rhs_block > script + .c._oc._Ve.rhsvw, :root .rscontainer > .ellip, :root #MAIN.ShowTopic > .ad, :root a[href^="http://findersocket.com/"], :root a[href^="http://cdn3.adexprts.com/"], :root a[data-redirect^="this.href='http://paid.outbrain.com/network/redir?"], :root a[href^="http://stateresolver.link/"], :root .__ywl .__y_item, :root a[href^="http://www.myfreepaysite.com/sfw.php?aid"], :root a[href^="http://www.ireel.com/signup?ref"], :root #center_col > #resultStats + #tads, :root .__yinit .__y_item, :root [ad-id^="googlead"], :root a[href^="http://adlev.neodatagroup.com/"], :root a[href^="http://server.cpmstar.com/click.aspx?poolid="], :root #cnt #center_col > #res > #topstuff > .ts, :root iframe[id^="google_ads_frame"], :root a[href^="http://www.dealcent.com/register.php?affid="], :root #cnt #center_col > #taw > #tvcap > .c._oc._Lp, :root .trc_rbox_div a[target="_blank"][href^="http://tab"], :root .GKJYXHBF2 > .GKJYXHBE2 > .GKJYXHBH5, :root #rhs_block .mod > .gws-local-hotels__booking-module, :root a[href^="http://banners.victor.com/processing/"], :root a[href*="googleme.eu"], :root .mod > ._jH + .rscontainer, :root .GFYY1SVD2 > .GFYY1SVC2 > .GFYY1SVF5, :root #rhswrapper > #rhssection[border="0"][bgcolor="#ffffff"], :root .Mpopup + #Mad > #MadZone, :root a[href^="http://www.TwinPlan.com/AF_"], :root a[href^="http://landingpagegenius.com/"], :root a[href^="http://www.streamtunerhd.com/signup?"], :root #ssmiwdiv[jsdisplay], :root #center_col > div[style="font-size:14px;margin-right:0;min-height:5px"] > div[style="font-size:14px;margin:0 4px;padding:1px 5px;background:#fff8e7"], :root a[href^="http://paid.outbrain.com/network/redir?"], :root #ads > .dose > .dosesingle, :root a[href^="http://easydownload4you.com/"], :root #rhs_block > #mbEnd, :root #center_col > #\5f Emc, :root a[href^="http://papi.mynativeplatform.com:80/pub2/"], :root div[id^="dfp-ad-"], :root .GB3L-QEDGY .GB3L-QEDF- > .GB3L-QEDE-, :root .rc-cta[data-target], :root a[href^="http://hd-plugins.com/download/"], :root #rhs_block > .ts[cellspacing="0"][cellpadding="0"][style="padding:0"], :root .GFYY1SVE2 > .GFYY1SVD2 > .GFYY1SVG5, :root #flowplayer > div[style="position: absolute; width: 300px; height: 275px; left: 222.5px; top: 85px; z-index: 999;"], :root a[href^="http://www.pinkvisualpad.com/?revid="], :root a[href^="http://www.greenmangaming.com/?tap_a="], :root a[href^="http://www.bet365.com/home/?affiliate"], :root #center_col > #resultStats + div + #res + #tads, :root .nrelate .nr_partner, :root a[href^="http://bonusfapturbo.nmvsite.com/"], :root a[href^="http://www.sexgangsters.com/?pid="], :root a[href^="http://www.amazon.co.uk/exec/obidos/external-search?"], :root #mn div[style="position:relative"] > #center_col > ._Ak, :root a[href^="http://www.adxpansion.com"], :root div[id^="dfp-slot-"], :root .l-container > #fishtank, :root a[href*="/adrotate-out.php?"], :root a[href^="http://wgpartner.com/"], :root #center_col > #resultStats + #tads + #res + #tads, :root a[href^="http://campaign.bharatmatrimony.com/cbstrack/"], :root .trc_related_container div[data-item-syndicated="true"], :root a[href^="http://t.mdn2015x1.com/"], :root .trc_rbox_border_elm .syndicatedItem, :root a[href^="http://dwn.pushtraffic.net/"], :root a[href$="/vghd.shtml"], :root #rhs_block > ol > .rhsvw > .kp-blk > .xpdopen > ._OKe > ol > ._DJe > .luhb-div, :root a[href^="http://ad-emea.doubleclick.net/"], :root a[href^="http://www.cash-duck.com/AF_"], :root p[id^="div-gpt-ad-"], :root #assetsListings[style="display: block;"], :root #content > #right > .dose > .dosesingle, :root #header + #content > #left > #rlblock_left, :root a[href*="emprestimo.eu"] { display: none !important; }</style><script async="" src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/snippet-javascript.en.js"></script><script async="" src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/post-validation.en.js"></script><script async="" src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/external-editor.en.js"></script><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style><script type="text/javascript" src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/adFeedback.js"></script><link rel="stylesheet" href="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/adFeedback.css"></head>
+<body class="question-page new-topbar">
+            <script>(function () { var old = $.fn.contents; $.fn.contents = function () { try { return old.apply(this, arguments); } catch (e) { return $([]); } } })()</script>
+        
+
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+
+<header class="so-header js-so-header _fixed _scrolling">
+    <div class="-container">
+        <div class="-main">            
+            <a href="https://stackoverflow.com/" class="-logo js-gps-track " data-gps-track="top_nav.click({is_current:false, location:2, destination:8})">
+
+                <span class="-img">Stack Overflow</span>
+            </a>
+
+            <nav class="navigation" role="navigation" aria-label="site navigation">
+                <ol class="-list">
+                        <li class="-item _current">
+        <a id="nav-questions" href="https://stackoverflow.com/questions" class="-link js-gps-track" data-gps-track="top_nav.click({is_current:true, location:2, destination:1})">Questions</a>
+    </li>
+
+    <li class="-item">
+        <a id="nav-jobs" href="https://stackoverflow.com/jobs?med=site-ui&amp;ref=jobs-tab" class="-link js-gps-track" data-gps-track="top_nav.click({is_current:false, location:2, destination:6})">Developer Jobs</a>
+    </li>
+                        <li class="-item">
+        <a id="nav-docs" href="https://stackoverflow.com/documentation" class="-link js-gps-track" data-gps-track="top_nav.click({is_current:false, location:2, destination:7})">Documentation <small class="beta-badge">beta</small></a>
+    </li>
+                        <li class="-item">
+        <a id="nav-tags" href="https://stackoverflow.com/tags" class="-link js-gps-track" data-gps-track="top_nav.click({is_current:false, location:2, destination:2})">Tags</a>
+    </li>
+
+                        <li class="-item">
+        <a id="nav-users" href="https://stackoverflow.com/users" class="-link js-gps-track" data-gps-track="top_nav.click({is_current:false, location:2, destination:3})">Users</a>
+    </li>
+
+                </ol>
+            </nav>
+
+                <form id="search" action="https://stackoverflow.com/search" method="get" class="searchbar" autocomplete="off" role="search">
+                    <svg role="icon" class="svg-icon iconSearch" width="18" height="18" viewBox="0 0 18 18"><path d="M12.864 11.321L18 16.5 16.5 18l-5.178-5.136v-.357a7 7 0 1 1 1.186-1.186h.356zM7 12A5 5 0 1 0 7 2a5 5 0 0 0 0 10z"></path></svg>
+                    <input name="q" type="text" placeholder="Search..." value="" tabindex="1" autocomplete="off" maxlength="240" class="f-input js-search-field">
+                    <button type="submit" class="btn js-search-submit">
+                        <svg role="icon" class="svg-icon iconSearch" width="18" height="18" viewBox="0 0 18 18"><path d="M12.864 11.321L18 16.5 16.5 18l-5.178-5.136v-.357a7 7 0 1 1 1.186-1.186h.356zM7 12A5 5 0 1 0 7 2a5 5 0 0 0 0 10z"></path></svg>
+                    </button>
+                </form>
+
+        </div>
+        
+
+
+    
+
+<div class="-actions">
+    <nav class="secondary-nav">
+        <div class="-dialog-container js-topbar-dialog-corral">
+
+
+    <div class="topbar-dialog siteSwitcher-dialog dno">
+        <div class="header">
+            <h3><a href="https://stackoverflow.com/">current community</a>
+            </h3>
+        </div>
+        <div class="modal-content current-site-container">
+            <ul class="current-site">
+                    <li>
+                            <div class="related-links">
+            <a href="https://stackoverflow.com/help" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:14 })">help</a>
+                    <a href="https://chat.stackoverflow.com/" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+            </div>
+
+    <a href="https://stackoverflow.com/" class="current-site-link site-link js-gps-track" data-id="1" data-gps-track="site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
+        Stack Overflow
+    </a>
+
+                    </li>
+                    <li class="related-site">
+                            <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                        
+    <a href="https://meta.stackoverflow.com/" class="site-link js-gps-track" data-id="552" data-gps-track="site.switch({ target_site:552, item_type:3 }),site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
+        Meta Stack Overflow
+    </a>
+
+                    </li>
+            </ul>
+        </div>
+
+        <div class="header" id="your-communities-header">
+            <h3>
+your communities            </h3>
+
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <div class="call-to-login">
+<a href="https://stackoverflow.com/users/signup?ssrc=site_switcher&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;amp;utm_source=stackoverflow.com&amp;amp;utm_medium=dev-story&amp;amp;utm_campaign=signup-redirect" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a> or <a href="https://stackoverflow.com/users/login?ssrc=site_switcher&amp;returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f4683093%2fbeamer-how-to-show-images-as-step-by-step-images" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a> to customize your list.
+                </div>
+        </div>
+
+        <div class="header">
+            <h3><a href="https://stackexchange.com/sites">more stack exchange communities</a>
+            </h3>
+            <a href="https://stackoverflow.blog/" class="fr">company blog</a>
+        </div>
+        <div class="modal-content">
+                <div class="child-content"></div>
+        </div>        
+    </div>
+                <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="https://stackoverflow.com/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="https://stackoverflow.com/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                        <li>
+                            <a href="https://meta.stackoverflow.com/" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                                Meta
+                                <span class="item-summary">
+                                    Discuss the workings and policies of this site
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/company/about" class="js-gps-track" data-gps-track="help_popup.click({ item_type:6 })">
+                                About Us
+                                <span class="item-summary">
+                                    Learn more about Stack Overflow the company
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.stackoverflowbusiness.com/?ref=topbar_help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:7 })">
+                                Business
+                                <span class="item-summary">
+                                    Learn more about hiring developers or posting ads with us
+                                </span>
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+
+        </div>
+        <ol class="-list">
+
+
+    <li class="-item"><a href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" class="-link js-help-button" title="Help Center and other resources">
+        <svg role="icon" class="svg-icon iconHelp" width="18" height="18" viewBox="0 0 18 18"><path d="M9 1a8 8 0 1 0 0 16.001A8 8 0 0 0 9 1zm.812 12.126c-.02.716-.55 1.157-1.238 1.137-.659-.02-1.177-.49-1.157-1.209.02-.715.566-1.17 1.225-1.15.691.021 1.194.507 1.17 1.222zm1.956-5.114c-.168.237-.546.542-1.02.912l-.527.361c-.257.197-.417.43-.502.695-.044.141-.076.507-.084.752-.004.048-.032.156-.181.156H7.883c-.165 0-.185-.096-.18-.144.023-.667.12-1.218.397-1.66.374-.594 1.426-1.221 1.426-1.221.161-.12.286-.25.382-.39.177-.24.321-.51.321-.8 0-.333-.08-.65-.293-.915-.249-.31-.518-.458-1.036-.458-.51 0-.808.257-1.021.594-.213.338-.177.735-.177 1.097H5.746c0-1.366.357-2.238 1.112-2.752.51-.35 1.162-.502 1.921-.502.996 0 1.788.184 2.487.715.647.49.988 1.181.988 2.113 0 .575-.2 1.057-.486 1.447z"></path></svg>
+    </a></li>
+                <li class="-item">
+        <a href="https://stackexchange.com/" class="-link js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 169 Stack Exchange sites">
+            <svg role="icon" class="svg-icon iconStackExchange" width="18" height="18" viewBox="0 0 18 18"><path d="M1 13a2 2 0 0 0 2 2h8v3l3-3h1a2 2 0 0 0 2-2v-2H1v2zM15 1H3a2 2 0 0 0-2 2v2h16V3a2 2 0 0 0-2-2zM1 6h16v4H1V6z"></path></svg>
+        </a>
+    </li>
+
+
+        </ol>
+    </nav>
+        <div class="-ctas">
+                <a href="https://stackoverflow.com/users/login?ssrc=head&amp;returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f4683093%2fbeamer-how-to-show-images-as-step-by-step-images" class="login-link btn-clear" rel="nofollow">Log In</a>
+                    <a href="https://stackoverflow.com/users/signup?ssrc=head&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;utm_source=stackoverflow.com&amp;utm_medium=dev-story&amp;utm_campaign=signup-redirect" class="login-link btn" rel="nofollow">Sign Up</a>
+
+        </div>
+</div>
+    </div>
+</header>
+
+    <script>
+        StackExchange.ready(function () { StackExchange.topbar.init(); });
+            StackExchange.scrollPadding.setPaddingTop(60, 10);     </script>
+
+    <div class="container">
+        
+
+
+        <div id="content" class="snippet-hidden">
+
+
+            
+
+            
+
+<div itemscope="" itemtype="http://schema.org/Question">
+    <link itemprop="image" href="https://cdn.sstatic.net/Sites/stackoverflow/img/apple-touch-icon.png?v=c78bd457575a">
+
+
+<div id="herobox" class="alternate">
+    <div class="test"></div>
+        <div id="close">
+            <a title="click to minimize"><span>x</span> Dismiss</a>
+        </div>
+    <div class="content">
+        <b>Join the Stack Overflow Community</b>
+        <div class="separator"></div>
+        <div class="blurb">
+            Stack Overflow is a community of 7.4 million programmers, just like you, helping each other.
+                <br>
+Join them; it only takes a minute:                <br>
+        </div>
+        <a href="https://stackoverflow.com/users/signup?ssrc=hero&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;amp;utm_source=stackoverflow.com&amp;amp;utm_medium=dev-story&amp;amp;utm_campaign=signup-redirect" id="tell-me-more" class="button">Sign up</a>
+    </div>
+</div>
+<script>
+    StackExchange.ready(function () {
+
+        var location = 0;
+        if ($("body").hasClass("questions-page")) {
+            location = 1;
+        } else if ($("body").hasClass("question-page")) {
+            location = 1;
+        } else if ($("body").hasClass("faq-page")) {
+            location = 5;
+        } else if ($("body").hasClass("home-page")) {
+            location = 3;
+        }
+        
+        $('#tell-me-more').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: 'cta', location: location }, true);
+            });
+        });
+        
+        $('#herobox #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "minimize", location: location }, true);
+            });
+            
+            $.cookie("hero", "mini", { path: "/", expires: 365 });
+            $.ajax({
+                url: "/hero-mini",
+                success: function (data) {
+                    $("#herobox").fadeOut("fast", function () {
+                        $("#herobox").replaceWith(data);
+                        $("#herobox-mini").fadeIn("fast");
+                    });
+                }
+            });
+            return false;
+        });
+    });
+
+</script>			<div id="question-header">
+                <h1 itemprop="name"><a href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images" class="question-hyperlink">Beamer: How to show images as step-by-step images</a></h1>
+
+            
+<div class="aside-cta" role="navigation" aria-label="ask new question">
+    <a href="https://stackoverflow.com/questions/ask" class="btn-outlined">Ask Question</a>
+</div>
+		</div>
+			<div id="mainbar" role="main" aria-label="question and answers">
+
+			
+
+<div class="question" data-questionid="4683093" id="question">
+
+    <script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk864382273",4).setZone(43); });
+            </script>
+            <div class="everyonelovesstackoverflow adzerk-vote" id="adzerk864382273"><iframe id="ados_frame_adzerk864382273_6210445" frameborder="0" scrolling="no" height="90" width="728" src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/saved_resource.html"></iframe><img height="0px" width="0px" border="0" style="position: absolute; display: none;" src="https://engine.adzerk.net/i.gif?e=eyJhdiI6MTcwMTQyLCJhdCI6NCwiYnQiOjAsImNtIjo2MDc0MjAsImNoIjoxMTc4LCJjayI6e30sImNyIjozNjAwNDEwLCJkaSI6IjdkNGY3MWY1ZmZhNTQ1MGNhNGQzNjBhNDMwYTAyOGFjIiwiZG0iOjEsImZjIjo2MTUyNDc0LCJmbCI6NjIxMDQ0NSwiaXAiOiIxODkuNTQuMTQ1LjEwMSIsImt3IjoiaW1hZ2UsbGF0ZXgsYmVhbWVyIiwibnciOjIyLCJwYyI6My4zLCJlYyI6My4zLCJwciI6OTU2MDQsInJ0IjoyLCJyZiI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20uYnIvIiwic2EiOiIzIiwic2IiOiJpLTA5N2RiZTg4NzI5Yjg3ZTg0Iiwic3AiOjUwNDMsInN0Ijo4Mjc3LCJ1ayI6InVlMS1jNGFlYTA2NzVhMDM0NjBhYmI2NDc4MWE1OWVmZTgzYSIsInpuIjo0MywidHMiOjE1MDAzMTQ4MzIwODQsImJmIjp0cnVlLCJwbiI6ImFkemVyazg2NDM4MjI3MyIsImJhIjo2LCJmcSI6MH0&amp;s=zwyEsRkpxiH1bzK_3emd60_7aoQ"><div class="adzerk-vote-controls" style="display:none;"><div class="adzerk-vote-option adzerk-vote-up"><div class="adzerk-vote-icon"></div></div><div class="adzerk-vote-option adzerk-vote-down"><div class="adzerk-vote-icon"></div></div></div><div class="adzerk-vote-survey" style="display:none;"><form lpformnum="1"><span>No problem. We won't show you that ad again. Why didn't you like it?</span><ul><li><label><input type="radio" value="12" name="downvoteReason">Uninteresting</label></li><li><label><input type="radio" value="13" name="downvoteReason">Misleading</label></li><li><label><input type="radio" value="14" name="downvoteReason">Offensive</label></li><li><label><input type="radio" value="15" name="downvoteReason">Repetitive</label></li><li><label><input type="radio" value="16" name="downvoteReason">Other</label></li></ul><a href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" class="adzerk-vote-cancel">Oops! I didn't mean to do this.</a></form></div></div>    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="4683093">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">35</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#">favorite</a>
+        <div class="favoritecount"><b>12</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>I'm trying to make a presentation using the <strong>Beamer</strong> class. I want to show a simple list of images, one by one in one frame, just like when you use <em>itemize&lt;+-&gt;</em>.</p>
+
+<p>I have no problem showing the images one-by-one, but the images shifts every time I insert a new image. How do I solve this - From my perspective there must be a simple solution, without specifying the absolute placement of the images.</p>
+    </div>
+    <div class="post-taglist">
+        <a href="https://stackoverflow.com/questions/tagged/image" class="post-tag js-gps-track" title="show questions tagged &#39;image&#39;" rel="tag">image</a> <a href="https://stackoverflow.com/questions/tagged/latex" class="post-tag js-gps-track" title="show questions tagged &#39;latex&#39;" rel="tag">latex</a> <a href="https://stackoverflow.com/questions/tagged/beamer" class="post-tag js-gps-track" title="show questions tagged &#39;beamer&#39;" rel="tag">beamer</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="https://stackoverflow.com/q/4683093" title="short permalink to this question" class="short-link" id="link-post-4683093">share</a><span class="lsep">|</span><a href="https://stackoverflow.com/posts/4683093/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2011-01-13 17:24:17Z" class="relativetime">Jan 13 '11 at 17:24</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="https://stackoverflow.com/users/256664/aagaard"><div class="gravatar-wrapper-32"><img src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/B9I2N.png" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="https://stackoverflow.com/users/256664/aagaard">aagaard</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">765</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="9 silver badges"><span class="badge2"></span><span class="badgecount">9</span></span><span title="26 bronze badges"><span class="badge3"></span><span class="badgecount">26</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+                    
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-4683093" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-5163926" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Would you like to show all the images in a single frame, or each image in its own frame, but aligned with the images shown before?</span>
+                    –&nbsp;<a href="https://stackoverflow.com/users/279627/sven-marnach" title="260,365 reputation" class="comment-user">Sven Marnach</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#comment5163926_4683093"><span title="2011-01-13 17:41:48Z" class="relativetime-clean">Jan 13 '11 at 17:41</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-5164317" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">In a single frame... So the images do not shifts as they are uncovered</span>
+                    –&nbsp;<a href="https://stackoverflow.com/users/256664/aagaard" title="765 reputation" class="comment-user owner">aagaard</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#comment5164317_4683093"><span title="2011-01-13 18:05:24Z" class="relativetime-clean">Jan 13 '11 at 18:05</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-5164766" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">You can find an entire community on the <a href="http://tex.stackexchange.com/">TeX StackExchange</a>, where no TeX-related question is too small.  See <a href="http://tex.stackexchange.com/questions/7436/latex-beamer-fixed-vertical-alignment">this question</a>.</span>
+                    –&nbsp;<a href="https://stackoverflow.com/users/297797/matthew-leingang" title="1,260 reputation" class="comment-user">Matthew Leingang</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#comment5164766_4683093"><span title="2011-01-13 18:38:45Z" class="relativetime-clean">Jan 13 '11 at 18:38</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-5164893" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Thanks for the link! I didn't know that existed.</span>
+                    –&nbsp;<a href="https://stackoverflow.com/users/256664/aagaard" title="765 reputation" class="comment-user owner">aagaard</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#comment5164893_4683093"><span title="2011-01-13 18:47:41Z" class="relativetime-clean">Jan 13 '11 at 18:47</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-4683093" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" onclick=""></a>
+        </div>         
+    </td>
+</tr>        </tbody></table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								4 Answers
+                                <span style="display:none;" itemprop="answerCount">4</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active" data-shortcut="A">
+            active</a>
+        <a href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest" data-shortcut="O">
+            oldest</a>
+        <a class="youarehere" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes" data-shortcut="V">
+            votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="4684091"></a>
+<div id="answer-4684091" class="answer" data-answerid="4684091" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="4684091">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">28</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>You can simply specify a series of images like this:</p>
+
+<pre><code>\includegraphics&lt;1&gt;{A}
+\includegraphics&lt;2&gt;{B}
+\includegraphics&lt;3&gt;{C}
+</code></pre>
+
+<p>This will produce three slides with the images A to C in exactly the
+same position.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="https://stackoverflow.com/a/4684091" title="short permalink to this answer" class="short-link" id="link-post-4684091">share</a><span class="lsep">|</span><a href="https://stackoverflow.com/posts/4684091/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2011-01-13 19:00:52Z" class="relativetime">Jan 13 '11 at 19:00</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="https://stackoverflow.com/users/31615/svante"><div class="gravatar-wrapper-32"><img src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/1127d0098e693682f382758abd9f6c76" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="https://stackoverflow.com/users/31615/svante">Svante</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 33,758" dir="ltr">33.8k</span><span title="5 gold badges"><span class="badge1"></span><span class="badgecount">5</span></span><span title="53 silver badges"><span class="badge2"></span><span class="badgecount">53</span></span><span title="106 bronze badges"><span class="badge3"></span><span class="badgecount">106</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-4684091" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-5165372" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I also tried this with some success, but instead of "popping up", I would rather have the content allocated on the frame from the start. This is makes the other content on the slide move, when it appears.</span>
+                    –&nbsp;<a href="https://stackoverflow.com/users/256664/aagaard" title="765 reputation" class="comment-user owner">aagaard</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#comment5165372_4684091"><span title="2011-01-13 19:20:47Z" class="relativetime-clean">Jan 13 '11 at 19:20</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-4684091" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk1358743264",4).setZone(44); });
+            </script>
+            <div class="everyonelovesstackoverflow adzerk-vote" id="adzerk1358743264"><a href="https://engine.adzerk.net/r?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjo5MTgyOCwiY2giOjExNzgsImNrIjp7fSwiY3IiOjczODAzMywiZGkiOiI2NjZlOGQxZWJlZWM0M2NlYWVhMmE1MDY3N2UwYWRjYSIsImRtIjoxLCJmYyI6NzY5MDgxLCJmbCI6MTY1MjkzLCJpcCI6IjE4OS41NC4xNDUuMTAxIiwia3ciOiJpbWFnZSxsYXRleCxiZWFtZXIiLCJudyI6MjIsInBjIjowLCJlYyI6MCwicHIiOjE1NjgsInJ0IjoxLCJyZiI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20uYnIvIiwic2EiOiIzIiwic2IiOiJpLTA5N2RiZTg4NzI5Yjg3ZTg0Iiwic3AiOjUwNDMsInN0Ijo4Mjc3LCJ1ayI6InVlMS1jNGFlYTA2NzVhMDM0NjBhYmI2NDc4MWE1OWVmZTgzYSIsInpuIjo0NCwidHMiOjE1MDAzMTQ4MzIwODUsImJmIjp0cnVlLCJwbiI6ImFkemVyazEzNTg3NDMyNjQiLCJ1ciI6Imh0dHA6Ly9wdC5zdGFja292ZXJmbG93LmNvbS8_dXRtX3NvdXJjZT1zdGFja292ZXJmbG93LmNvbSZ1dG1fbWVkaXVtPWFkJnV0bV9jYW1wYWlnbj1wdHNvLTImdXRtX2NvbnRlbnQ9bGItbmFvLWVuY29udHJvdS1ob21lIn0&amp;s=AOaqy9CI5HCHKnFykst_jiFcHSg" rel="nofollow" target="_blank" title=""><img src="https://s.zkcdn.net/Advertisers/6e0015aeac9141fe82cf1fa9ea10554d.png" title="" alt="" border="0" width="728" height="90" style="display: none !important;"></a><img height="0px" width="0px" border="0" style="position: absolute; display: none;" src="https://engine.adzerk.net/i.gif?e=eyJhdiI6NDE0LCJhdCI6NCwiYnQiOjAsImNtIjo5MTgyOCwiY2giOjExNzgsImNrIjp7fSwiY3IiOjczODAzMywiZGkiOiI2NjZlOGQxZWJlZWM0M2NlYWVhMmE1MDY3N2UwYWRjYSIsImRtIjoxLCJmYyI6NzY5MDgxLCJmbCI6MTY1MjkzLCJpcCI6IjE4OS41NC4xNDUuMTAxIiwia3ciOiJpbWFnZSxsYXRleCxiZWFtZXIiLCJudyI6MjIsInBjIjowLCJlYyI6MCwicHIiOjE1NjgsInJ0IjoxLCJyZiI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20uYnIvIiwic2EiOiIzIiwic2IiOiJpLTA5N2RiZTg4NzI5Yjg3ZTg0Iiwic3AiOjUwNDMsInN0Ijo4Mjc3LCJ1ayI6InVlMS1jNGFlYTA2NzVhMDM0NjBhYmI2NDc4MWE1OWVmZTgzYSIsInpuIjo0NCwidHMiOjE1MDAzMTQ4MzIwODgsImJmIjp0cnVlLCJwbiI6ImFkemVyazEzNTg3NDMyNjQiLCJmcSI6MX0&amp;s=AN_y2im5cTpR78xO5UPB7XAxDCY"><div class="adzerk-vote-controls" style="display:none;"><div class="adzerk-vote-option adzerk-vote-up"><div class="adzerk-vote-icon"></div></div><div class="adzerk-vote-option adzerk-vote-down"><div class="adzerk-vote-icon"></div></div></div><div class="adzerk-vote-survey" style="display:none;"><form lpformnum="2"><span>No problem. We won't show you that ad again. Why didn't you like it?</span><ul><li><label><input type="radio" value="12" name="downvoteReason">Uninteresting</label></li><li><label><input type="radio" value="13" name="downvoteReason">Misleading</label></li><li><label><input type="radio" value="14" name="downvoteReason">Offensive</label></li><li><label><input type="radio" value="15" name="downvoteReason">Repetitive</label></li><li><label><input type="radio" value="16" name="downvoteReason">Other</label></li></ul><a href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" class="adzerk-vote-cancel">Oops! I didn't mean to do this.</a></form></div></div>
+  
+<a name="4685015"></a>
+<div id="answer-4685015" class="answer accepted-answer" data-answerid="4685015" itemscope="" itemtype="http://schema.org/Answer" itemprop="acceptedAnswer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="4685015">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">26</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+        <span class="vote-accepted-on load-accepted-answer-date" title="loading when this answer was accepted...">accepted</span>
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>I found a solution to my problem, by using the visble-command.</p>
+
+<p>EDITED:</p>
+
+<pre><code>\visible&lt;2-&gt;{
+   \textbf{Some text}
+   \begin{figure}[ht]
+       \includegraphics[width=5cm]{./path/to/image}
+    \end{figure}
+ }
+</code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="https://stackoverflow.com/a/4685015" title="short permalink to this answer" class="short-link" id="link-post-4685015">share</a><span class="lsep">|</span><a href="https://stackoverflow.com/posts/4685015/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="https://stackoverflow.com/posts/4685015/revisions" title="show all edits to this post">edited <span title="2011-01-14 21:47:31Z" class="relativetime">Jan 14 '11 at 21:47</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature owner">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2011-01-13 20:40:11Z" class="relativetime">Jan 13 '11 at 20:40</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="https://stackoverflow.com/users/256664/aagaard"><div class="gravatar-wrapper-32"><img src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/B9I2N.png" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="https://stackoverflow.com/users/256664/aagaard">aagaard</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">765</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="9 silver badges"><span class="badge2"></span><span class="badgecount">9</span></span><span title="26 bronze badges"><span class="badge3"></span><span class="badgecount">26</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-4685015" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-5166487" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of &#39;useful comment&#39; votes received" class="cool">2</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Can you post a code snippet for future reference?</span>
+                    –&nbsp;<a href="https://stackoverflow.com/users/308668/progo" title="10,117 reputation" class="comment-user">progo</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#comment5166487_4685015"><span title="2011-01-13 20:46:11Z" class="relativetime-clean">Jan 13 '11 at 20:46</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-46297067" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy"><code>visible</code> is superior to <code>onslide</code> when it comes to figures, because <code>onslide</code> tries to transparentize a figure, but it cannot!</span>
+                    –&nbsp;<a href="https://stackoverflow.com/users/2106753/sibbs-gambling" title="4,027 reputation" class="comment-user">Sibbs Gambling</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#comment46297067_4685015"><span title="2015-03-13 08:27:20Z" class="relativetime-clean">Mar 13 '15 at 8:27</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-4685015" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="10121077"></a>
+<div id="answer-10121077" class="answer" data-answerid="10121077" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="10121077">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">6</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>This is what I did:</p>
+
+<pre><code>\begin{frame}{series of images}
+\begin{center}
+\begin{overprint}
+
+\only&lt;2&gt;{\includegraphics[scale=0.40]{image1.pdf}}
+\hspace{-0.17em}\only&lt;3&gt;{\includegraphics[scale=0.40]{image2.pdf}}
+\hspace{-0.34em}\only&lt;4&gt;{\includegraphics[scale=0.40]{image3.pdf}}
+\hspace{-0.17em}\only&lt;5&gt;{\includegraphics[scale=0.40]{image4.pdf}}
+
+\only&lt;2-5&gt;{\mbox{\structure{Figure:} something}}
+
+\end{overprint}
+\end{center}
+\end{frame}
+</code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="https://stackoverflow.com/a/10121077" title="short permalink to this answer" class="short-link" id="link-post-10121077">share</a><span class="lsep">|</span><a href="https://stackoverflow.com/posts/10121077/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="https://stackoverflow.com/posts/10121077/revisions" title="show all edits to this post">edited <span title="2012-10-29 01:05:12Z" class="relativetime">Oct 29 '12 at 1:05</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="https://stackoverflow.com/users/904365/kjuly"><div class="gravatar-wrapper-32"><img src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/46ad1ded1fbe1ef680774777580dc28e" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="https://stackoverflow.com/users/904365/kjuly">Kjuly</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 26,145" dir="ltr">26.1k</span><span title="22 gold badges"><span class="badge1"></span><span class="badgecount">22</span></span><span title="79 silver badges"><span class="badge2"></span><span class="badgecount">79</span></span><span title="101 bronze badges"><span class="badge3"></span><span class="badgecount">101</span></span>
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2012-04-12 09:39:31Z" class="relativetime">Apr 12 '12 at 9:39</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="https://stackoverflow.com/users/1328716/amir"><div class="gravatar-wrapper-32"><img src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/c5e4fa52faaa27612de464128c0cb111" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="https://stackoverflow.com/users/1328716/amir">Amir</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">61</span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="1 bronze badge"><span class="badge3"></span><span class="badgecount">1</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-10121077" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-29746476" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Exactly what I was looking for!</span>
+                    –&nbsp;<a href="https://stackoverflow.com/users/192702/patrick-oscity" title="36,747 reputation" class="comment-user">Patrick Oscity</a>
+                <span class="comment-date" dir="ltr"><a class="comment-link" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#comment29746476_10121077"><span title="2013-11-14 15:34:28Z" class="relativetime-clean">Nov 14 '13 at 15:34</span></a></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-10121077" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="18817349"></a>
+<div id="answer-18817349" class="answer" data-answerid="18817349" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input type="hidden" name="_id_" value="18817349">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>This is a sample code I used to counter the problem.</p>
+
+<pre><code>\begin{frame}{Topic 1}
+Topic of the figures
+\begin{figure}
+\captionsetup[subfloat]{position=top,labelformat=empty}
+\only&lt;1&gt;{\subfloat[Fig. 1]{\includegraphics{figure1.jpg}}}
+\only&lt;2&gt;{\subfloat[Fig. 2]{\includegraphics{figure2.jpg}}}
+\only&lt;3&gt;{\subfloat[Fig. 3]{\includegraphics{figure3.jpg}}}
+\end{figure}
+\end{frame}
+</code></pre>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="https://stackoverflow.com/a/18817349" title="short permalink to this answer" class="short-link" id="link-post-18817349">share</a><span class="lsep">|</span><a href="https://stackoverflow.com/posts/18817349/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td align="right" class="post-signature">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="https://stackoverflow.com/posts/18817349/revisions" title="show all edits to this post">edited <span title="2013-10-04 01:57:01Z" class="relativetime">Oct 4 '13 at 1:57</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td align="right" class="post-signature">   
+       
+
+    <div class="user-info ">
+    <div class="user-action-time">
+        answered <span title="2013-09-15 20:46:51Z" class="relativetime">Sep 15 '13 at 20:46</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="https://stackoverflow.com/users/1772722/lionelmessi"><div class="gravatar-wrapper-32"><img src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/17346489240f67dafa4bad5967fa1aae" alt="" width="32" height="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="https://stackoverflow.com/users/1772722/lionelmessi">lionelmessi</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">453</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="5 silver badges"><span class="badge2"></span><span class="badgecount">5</span></span><span title="13 bronze badges"><span class="badge3"></span><span class="badgecount">13</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-18817349" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-18817349" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+									<a name="new-answer"></a>
+						<form id="post-form" action="https://stackoverflow.com/questions/4683093/answer/submit" method="post" class="post-form">
+						    <input type="hidden" id="post-id" value="4683093">
+                            <input type="hidden" id="qualityBanWarningShown" name="qualityBanWarningShown" value="false">
+                            <input type="hidden" name="referrer" value="https://www.google.com.br/">
+							<h2 class="space">Your Answer</h2>
+
+
+            <script>
+            StackExchange.ifUsing("editor", function () {
+                StackExchange.using("externalEditor", function () {
+                    StackExchange.using("snippets", function () {
+                        StackExchange.snippets.init();
+                    });
+                });
+            }, "code-snippets");
+        </script>
+    
+
+<script>
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+       
+        StackExchange.using("externalEditor", function() {
+                // Have to fire editor after snippets, if snippets enabled
+                if (StackExchange.settings.snippets.snippetsEnabled) {
+                    StackExchange.using("snippets", function() {
+                        createEditor();
+                    });
+                }
+                else {
+                    createEditor();
+                }
+            });
+
+            function createEditor() {
+                StackExchange.prepareEditor({
+                    heartbeatType: 'answer',
+                convertImagesToLinks: true,
+                reputationToPostImages: 10,
+                bindNavPrevention: true,
+                postfix: "",
+                    onDemand: true,
+                    discardSelector: ".discard-answer"
+                    ,immediatelyShowMarkdownHelp:true
+                    });
+                
+
+        }
+    });
+</script>
+
+
+<div id="post-editor" class="post-editor js-post-editor">
+
+    <div style="position: relative;"> 
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"><ul id="wmd-button-row" class="wmd-button-row"><li id="wmd-bold-button" class="wmd-button" style="left: 0px;"><span style="background-position: 0px -20px;"></span></li><li id="wmd-italic-button" class="wmd-button" style="left: 25px;"><span style="background-position: -20px -20px;"></span></li><li id="wmd-spacer1" class="wmd-spacer" style="left: 50px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-link-button" class="wmd-button" style="left: 75px;"><span style="background-position: -40px -20px;"></span></li><li id="wmd-quote-button" class="wmd-button" style="left: 100px;"><span style="background-position: -60px -20px;"></span></li><li id="wmd-code-button" class="wmd-button" style="left: 125px;"><span style="background-position: -80px -20px;"></span></li><li id="wmd-image-button" class="wmd-button" style="left: 150px;"><span style="background-position: -100px -20px;"></span></li><li id="wmd-spacer2" class="wmd-spacer" style="left: 175px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-olist-button" class="wmd-button" style="left: 200px;"><span style="background-position: -120px -20px;"></span></li><li id="wmd-ulist-button" class="wmd-button" style="left: 225px;"><span style="background-position: -140px -20px;"></span></li><li id="wmd-heading-button" class="wmd-button" style="left: 250px;"><span style="background-position: -160px -20px;"></span></li><li id="wmd-hr-button" class="wmd-button" style="left: 275px;"><span style="background-position: -180px -20px;"></span></li><li id="wmd-spacer3" class="wmd-spacer" style="left: 300px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-undo-button" class="wmd-button" style="left: 325px;"><span style="background-position: -200px -20px;"></span></li><li id="wmd-redo-button" class="wmd-button" style="left: 350px;"><span style="background-position: -220px -20px;"></span></li></ul></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+        </div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" type="hidden" value="38aa3371430e29d838c8fa86b0359946">
+        <input id="author" name="author" type="text">
+    </div>
+
+
+
+</div>
+
+							<div style="position: relative;">
+								
+								            <div class="form-item new-post-login">
+        
+                <div class="new-login-form">
+                    <div class="new-login-left">
+                        <h3>Sign up or <a id="login-link" href="https://stackoverflow.com/users/login?ssrc=question_page&amp;returnurl=https%3a%2f%2fstackoverflow.com%2fquestions%2f4683093%2fbeamer-how-to-show-images-as-step-by-step-images%23new-answer">log in</a></h3>
+                        <script>
+                            StackExchange.ready(function () {
+                                StackExchange.helpers.onClickDraftSave('#login-link');
+                            });
+                        </script>
+                        <div class="preferred-login google-login">
+                            <p><span class="icon"></span><span>Sign up using Google</span></p>
+                        </div>
+                        <div class="preferred-login facebook-login">
+                            <p><span class="icon"></span><span>Sign up using Facebook</span></p>
+                        </div>
+                        <div class="preferred-login stackexchange-login">
+                            <p><span class="icon"></span><span>Sign up using Email and Password</span></p>
+                        </div>
+                    </div>
+                    <input type="hidden" name="manual-openid" class="manual-openid">
+                    <input type="hidden" name="use-facebook" class="use-facebook" value="false">
+                    <input type="hidden" name="use-google" class="use-google" value="false">
+                    <input type="button" class="submit-openid" value="Submit" style="display:none">
+                    <div class="new-login-right">
+                                <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tbody><tr>
+                    <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown">
+                </div>
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                StackExchange.ready(
+                    function () {
+                        StackExchange.openid.initPostLogin('.new-post-login', 'https%3a%2f%2fstackoverflow.com%2fquestions%2f4683093%2fbeamer-how-to-show-images-as-step-by-step-images%23new-answer', 'question_page');
+                    }
+                );
+            </script>
+            <noscript>
+                        &lt;h3&gt;Post as a guest&lt;/h3&gt;
+    &lt;div class="form-item"&gt;
+        &lt;table&gt;
+        &lt;tr&gt;
+                    &lt;td class="vm"&gt;
+                &lt;div&gt;
+                    &lt;label for="display-name"&gt;Name&lt;/label&gt;
+                    &lt;input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105"&gt;
+                &lt;/div&gt;
+                &lt;div&gt;
+                    &lt;label for="m-address"&gt;Email&lt;/label&gt;
+                    &lt;input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown" /&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+
+            </noscript>
+
+							</div>
+           
+															<div class="form-submit cbt">
+									<input id="submit-button" type="submit" value="Post Your Answer" tabindex="110">
+									<a href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" class="btn-clear discard-answer dno">discard</a>
+
+<p class="privacy-policy-agreement">
+By posting your answer, you agree to the <a href="https://stackexchange.com/legal/privacy-policy" name="privacy" target="_blank">privacy policy</a> and <a href="https://stackexchange.com/legal/terms-of-service" name="tos" target="_blank">terms of service</a>.</p>
+<input type="hidden" name="legalLinksShown" value="1">								</div>
+						</form>
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you're looking for?							Browse other questions tagged <a href="https://stackoverflow.com/questions/tagged/image" class="post-tag" title="show questions tagged &#39;image&#39;" rel="tag">image</a> <a href="https://stackoverflow.com/questions/tagged/latex" class="post-tag" title="show questions tagged &#39;latex&#39;" rel="tag">latex</a> <a href="https://stackoverflow.com/questions/tagged/beamer" class="post-tag" title="show questions tagged &#39;beamer&#39;" rel="tag">beamer</a>  or <a href="https://stackoverflow.com/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes" role="complementary" aria-label="sidebar">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tbody><tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2011-01-13 17:24:17Z"><b>6 years, 6 months ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+                                    <b>61,147 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images?lastactivity" class="lastactivity-link" title="2013-10-04 01:57:01Z">3 years, 9 months ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </tbody></table>
+			    </div>
+						
+			<script>
+                var ados = ados || {}; ados.run = ados.run || [];
+                ados.run.push(function () { ados_add_placement(22,8277,"adzerk1846353128",[5,17,2221,1129,43]).setZone(45); });
+            </script>
+            <div class="everyonelovesstackoverflow adzerk-vote" id="adzerk1846353128"><iframe id="ados_frame_adzerk1846353128_6210446" frameborder="0" scrolling="no" height="250" width="300" src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/saved_resource(1).html"></iframe><img height="0px" width="0px" border="0" style="position: absolute; display: none;" src="https://engine.adzerk.net/i.gif?e=eyJhdiI6MTcwMTQyLCJhdCI6NSwiYnQiOjAsImNtIjo2MDc0MjAsImNoIjoxMTc4LCJjayI6e30sImNyIjozNjAwNDM1LCJkaSI6IjU4ZGViYTJkMmVjYjRmNzg5YjBlOGYxYWM4ZjY3Y2FlIiwiZG0iOjEsImZjIjo2MTUyNTA3LCJmbCI6NjIxMDQ0NiwiaXAiOiIxODkuNTQuMTQ1LjEwMSIsImt3IjoiaW1hZ2UsbGF0ZXgsYmVhbWVyIiwibnciOjIyLCJwYyI6My4zLCJlYyI6My4zLCJwciI6OTU2MDQsInJ0IjoyLCJyZiI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20uYnIvIiwic2EiOiIzIiwic2IiOiJpLTA5N2RiZTg4NzI5Yjg3ZTg0Iiwic3AiOjUwNDMsInN0Ijo4Mjc3LCJ1ayI6InVlMS1jNGFlYTA2NzVhMDM0NjBhYmI2NDc4MWE1OWVmZTgzYSIsInpuIjo0NSwidHMiOjE1MDAzMTQ4MzIwOTUsImJmIjp0cnVlLCJwbiI6ImFkemVyazE4NDYzNTMxMjgiLCJiYSI6NiwiZnEiOjB9&amp;s=eQdT4DiqorhewuS6AQljOkIvdtE"><div class="adzerk-vote-controls" style="display:none;"><div class="adzerk-vote-option adzerk-vote-up"><div class="adzerk-vote-icon"></div></div><div class="adzerk-vote-option adzerk-vote-down"><div class="adzerk-vote-icon"></div></div></div><div class="adzerk-vote-survey" style="display:none;"><form lpformnum="3"><span>No problem. We won't show you that ad again. Why didn't you like it?</span><ul><li><label><input type="radio" value="12" name="downvoteReason">Uninteresting</label></li><li><label><input type="radio" value="13" name="downvoteReason">Misleading</label></li><li><label><input type="radio" value="14" name="downvoteReason">Offensive</label></li><li><label><input type="radio" value="15" name="downvoteReason">Repetitive</label></li><li><label><input type="radio" value="16" name="downvoteReason">Other</label></li></ul><a href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" class="adzerk-vote-cancel">Oops! I didn't mean to do this.</a></form></div></div>
+            <div id="hireme"></div>
+        <script>
+window.clc_request = 'AljdsaM-zdQIAAAAAFV1RwACAAAAAgAAAAAUAAAAfGltYWdlfGxhdGV4fGJlYW1lcnwANx2doaFXhMIkxg';;!function i(n){try{if("function"!=typeof[].indexOf)return;if(!window.addEventListener)return;if(!n.allowed)return;if(!RegExp(n.allowed).test(location.hostname))return;var t=window,e=t.document,c=n.wv;if(e.hidden&&c)return void e.addEventListener("visibilitychange",function t(){e.hidden||(i(n),e.removeEventListener("visibilitychange",t))});if(t.clc=t.clc||{},t.clc.init=t.clc.init||[],n.autoload&&t.clc.init.push(function(i){return i.load()}),t.clc.options){for(var o in t.clc.options)n[o]=t.clc.options[o];t.clc.options=n}else t.clc.options=n;var r=e.createElement("script");r.async=!0,r.src=n.lib,e.body.appendChild(r)}catch(i){}}.call(null, {"lib":"https://cdn.sstatic.net/clc/clc.min.js?v=d80e98d967bf","u":"https://clc.stackoverflow.com/markup.js","azw":true,"kt":2000,"tto":true,"d":{"sb":["hireme","clc-sb"],"tlb":["careers1","clc-tlb"],"mlb":["careers3","clc-mlb"]},"h":"clc.stackoverflow.com","autoload":true,"allowed":"^(((talent\\.)?stackoverflow)|(blog\\.codinghorror)|(serverfault|askubuntu)|([^\\.]+\\.stackexchange))\\.com$","wv":true});        </script>
+			<div style="margin-bottom: 10px;">
+        
+
+<script>
+    StackExchange.ready(function () {
+        StackExchange.newsletterAd.init();
+    });
+</script>
+
+<div id="newsletter-ad">
+        <p id="newsletter-ad-header">Get the <b>weekly newsletter!</b> In it, you'll get:</p>
+        <ul>
+            <li>The week's top questions and answers</li>
+            <li>Important community announcements</li>
+            <li>Questions that need answers</li>
+        </ul>
+    <div id="newsletter-signup-container"><input id="newsletter-signup" type="button" value="Sign up for the newsletter"></div>
+    <p id="newsletter-preview-container">see an <a href="https://stackexchange.com/newsletters/newsletter?site=stackoverflow.com" id="newsletter-preview">example newsletter</a></p>
+    <div class="dno">
+        
+<p class="privacy-policy-agreement">
+By subscribing, you agree to the <a href="https://stackexchange.com/legal/privacy-policy" name="privacy" target="_blank">privacy policy</a> and <a href="https://stackexchange.com/legal/terms-of-service" name="tos" target="_blank">terms of service</a>.</p>
+<input type="hidden" name="legalLinksShown" value="1">
+    </div>
+</div>
+
+    </div>
+
+            
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer js-gps-track"><a href="https://stackoverflow.com/q/913966?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">35</div></a><a href="https://stackoverflow.com/questions/913966/how-to-split-table-of-contents-across-multiple-slides-with-latex-beamer?rq=1" class="question-hyperlink">How to split table of contents across multiple slides with Latex Beamer?</a></div><div class="spacer js-gps-track"><a href="https://stackoverflow.com/q/2795478?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">7</div></a><a href="https://stackoverflow.com/questions/2795478/latex-beamer-prevent-showing-the-toc-at-one-occation?rq=1" class="question-hyperlink">latex beamer: prevent showing the TOC at one occation</a></div><div class="spacer js-gps-track"><a href="https://stackoverflow.com/q/2822345?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">45</div></a><a href="https://stackoverflow.com/questions/2822345/how-do-you-change-the-image-of-a-bullet-point-in-latex-beamer?rq=1" class="question-hyperlink">How do you change the image of a bullet point in LaTeX Beamer</a></div><div class="spacer js-gps-track"><a href="https://stackoverflow.com/q/3529700?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">1</div></a><a href="https://stackoverflow.com/questions/3529700/beamer-presentation-sneak-in-slides-for-each-bulleted-element?rq=1" class="question-hyperlink">Beamer Presentation: Sneak in slides for each bulleted element</a></div><div class="spacer js-gps-track"><a href="https://stackoverflow.com/q/24335973?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="https://stackoverflow.com/questions/24335973/timing-effects-in-slides-made-with-latex?rq=1" class="question-hyperlink">Timing effects in slides made with LaTeX</a></div><div class="spacer js-gps-track"><a href="https://stackoverflow.com/q/26186350?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">1</div></a><a href="https://stackoverflow.com/questions/26186350/alterning-images-in-beamer-is-shifting-to-right?rq=1" class="question-hyperlink">Alterning images in beamer is shifting to right</a></div><div class="spacer js-gps-track"><a href="https://stackoverflow.com/q/27343713?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">3</div></a><a href="https://stackoverflow.com/questions/27343713/knitr-beamer-with-overlays-in-figure?rq=1" class="question-hyperlink">Knitr &amp; Beamer with Overlays in Figure</a></div><div class="spacer js-gps-track"><a href="https://stackoverflow.com/q/28296158?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">1</div></a><a href="https://stackoverflow.com/questions/28296158/too-much-space-after-first-line-in-table-in-beamer-class?rq=1" class="question-hyperlink">Too much space after first line in table in beamer class</a></div><div class="spacer js-gps-track"><a href="https://stackoverflow.com/q/33517056?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">2</div></a><a href="https://stackoverflow.com/questions/33517056/beamer-headline-setup?rq=1" class="question-hyperlink">Beamer Headline setup</a></div><div class="spacer js-gps-track"><a href="https://stackoverflow.com/q/36682334?rq=1" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="https://stackoverflow.com/questions/36682334/how-to-get-rid-of-beamer-navigation-toolbar?rq=1" class="question-hyperlink">how to get rid of beamer “navigation toolbar”</a></div>
+                    </div>
+				</div>
+            
+
+<div id="hot-network-questions" class="module tex2jax_ignore">
+    <h4>
+        <a href="https://stackexchange.com/questions?tab=hot" class="js-gps-track" data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li>
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="https://worldbuilding.stackexchange.com/questions/86281/could-you-have-more-than-one-building-in-the-same-spot-by-stacking-them-in-4th" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Could you have more than one building in the same spot by "stacking" them in 4th dimensional space?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-codereview" title="Code Review Stack Exchange"></div><a href="https://codereview.stackexchange.com/questions/169452/simple-generic-cache" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:196 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Simple generic cache
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-ell" title="English Language Learners Stack Exchange"></div><a href="https://ell.stackexchange.com/questions/136565/what-is-the-meaning-of-brown-bagged-it" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:481 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What is the meaning of Brown-Bagged it?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="https://scifi.stackexchange.com/questions/163975/looking-for-old-story-about-a-twisted-wire-producing-unlimited-energy-and-causin" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Looking for old story about a twisted wire producing unlimited energy and causing civilization to collapse
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-bitcoin" title="Bitcoin Stack Exchange"></div><a href="https://bitcoin.stackexchange.com/questions/56770/where-can-you-see-current-bitcoin-miners-signalling-segwit2x" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:308 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Where can you see current Bitcoin miners signalling SegWit2x?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-chemistry" title="Chemistry Stack Exchange"></div><a href="https://chemistry.stackexchange.com/questions/78939/what-does-the-pi-stand-for-in-the-reaction-for-biological-nitrogen-fixation" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:431 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What does the Pi stand for in the reaction for biological nitrogen fixation?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-unix" title="Unix &amp; Linux Stack Exchange"></div><a href="https://unix.stackexchange.com/questions/379002/when-are-menuconfig-changes-performed" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:106 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    When are menuconfig changes performed?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-retrocomputing" title="Retrocomputing Stack Exchange"></div><a href="https://retrocomputing.stackexchange.com/questions/3314/how-were-the-first-zx-spectrum-games-written" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:648 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How were the first ZX Spectrum games written?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="https://academia.stackexchange.com/questions/93236/is-teaching-on-youtube-for-non-teachers-illegal" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is teaching on YouTube for non-teachers illegal?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-physics" title="Physics Stack Exchange"></div><a href="https://physics.stackexchange.com/questions/346084/can-nuclear-fusion-alone-account-for-the-energy-output-from-type-1a-supernova" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:151 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can nuclear fusion alone account for the energy output from type 1a supernova?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-blender" title="Blender Stack Exchange"></div><a href="https://blender.stackexchange.com/questions/84705/what-is-the-workflow-to-create-animation-in-blender" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:502 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What is the workflow to create animation in Blender?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-webmasters" title="Webmasters Stack Exchange"></div><a href="https://webmasters.stackexchange.com/questions/107873/do-heading-tags-out-of-order-penalise-seo" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:45 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Do heading tags out of order penalise SEO?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="https://english.stackexchange.com/questions/400279/is-recent-past-an-oxymoron" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is "recent past" an oxymoron?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-workplace" title="The Workplace Stack Exchange"></div><a href="https://workplace.stackexchange.com/questions/95223/how-to-deal-with-a-subordinate-constantly-being-in-semi-professional-chats" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:423 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to deal with a subordinate constantly being in semi-professional chats
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-workplace" title="The Workplace Stack Exchange"></div><a href="https://workplace.stackexchange.com/questions/95022/client-wants-to-reduce-hourly-rate-at-the-start-of-a-new-project" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:423 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Client wants to reduce hourly rate at the start of a new project
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-stackoverflow" title="Stack Overflow"></div><a href="https://stackoverflow.com/questions/45136398/is-the-monadic-io-construct-in-haskell-just-a-convention" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:1 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is the monadic IO construct in Haskell just a convention?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="https://codegolf.stackexchange.com/questions/132771/find-the-missing-letter" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Find the Missing Letter
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-mathematica" title="Mathematica Stack Exchange"></div><a href="https://mathematica.stackexchange.com/questions/151621/animate-koch-curve-generation-and-include-a-transition-effect" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:387 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Animate Koch curve generation and include a transition effect
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-ux" title="User Experience Stack Exchange"></div><a href="https://ux.stackexchange.com/questions/109993/ideas-for-a-z-pickers" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:102 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Ideas for A-Z pickers
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-money" title="Personal Finance &amp; Money Stack Exchange"></div><a href="https://money.stackexchange.com/questions/81852/should-i-have-a-higher-credit-limit-on-my-credit-card" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:93 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Should I have a higher credit limit on my credit card?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-electronics" title="Electrical Engineering Stack Exchange"></div><a href="https://electronics.stackexchange.com/questions/317634/why-dont-we-have-very-high-layer-count-pcbs-usually-a-maximum-of-4-6-layers" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:135 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why don't we have very high layer count PCBs (usually a maximum of 4-6 layers)?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="https://academia.stackexchange.com/questions/93261/clarifications-on-american-graduate-school-for-an-european-student" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Clarifications on American graduate school for an European student
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-softwareengineering" title="Software Engineering Stack Exchange"></div><a href="https://softwareengineering.stackexchange.com/questions/352911/are-the-development-benefits-of-using-docker-negated-when-using-java-compared-to" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:131 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Are the development benefits of using docker negated when using java compared to other languages closer to unix binaries?
+                </a>
+
+            </li>
+            <li class="dno js-hidden" style="display: list-item;">
+                <div class="favicon favicon-security" title="Information Security Stack Exchange"></div><a href="https://security.stackexchange.com/questions/165338/what-can-i-do-after-an-attack-to-our-system-that-hit-our-login-route" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:162 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What can I do after an attack to our system that hit our login route?
+                </a>
+
+            </li>
+    </ul>
+
+        
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="https://stackoverflow.com/feeds/question/4683093" title="feed of this question and its answers">
+            <span class="feed-icon"></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/4683093/ivc/23c3');});
+</script>
+<noscript>
+    &lt;div&gt;&lt;img src="/posts/4683093/ivc/23c3" class="dno" alt="" width="0" height="0"&gt;&lt;/div&gt;
+</noscript><div style="display:none" id="prettify-lang"></div></div>
+
+
+        </div>
+    </div>
+
+        <footer id="footer" class="s-footer js-footer _short" role="contentinfo">
+            <div class="-container">
+                <div class="g-row js-sp-between">
+                    <div class="-logo">
+                        <a href="https://stackoverflow.com/"><svg role="icon" class="svg-icon iconLogo" width="150" height="30" viewBox="0 0 150 30"><g><path d="M33.9 18.6l-1.7-.2c-1.3-.1-1.9-.6-1.9-1.6 0-1.1.8-1.8 2.4-1.8 1.1 0 2.1.3 2.8.8l1-1c-1-.8-2.3-1.1-3.8-1.1-2.3 0-3.9 1.2-3.9 3.1 0 1.8 1.1 2.7 3.2 2.9l1.8.2c1.2.1 1.8.6 1.8 1.6 0 1.3-1.1 1.9-2.8 1.9-1.3 0-2.5-.3-3.3-1.2l-1 1c1.2 1.1 2.6 1.5 4.4 1.5 2.6 0 4.3-1.2 4.3-3.2-.2-2-1.5-2.7-3.3-2.9zm13.3-4.8c-1.7 0-2.8.3-3.7 1.5l1 1c.6-.9 1.3-1.2 2.7-1.2 1.9 0 2.7.8 2.7 2.3v1h-3.2c-2.4 0-3.7 1.2-3.7 3.1 0 .8.3 1.6.8 2.2.7.7 1.5 1 3 1 1.4 0 2.2-.3 3.1-1.1v1h1.6v-7.2c-.1-2.4-1.5-3.6-4.3-3.6zm2.7 7c0 .9-.2 1.5-.5 1.8-.7.6-1.5.7-2.4.7-1.7 0-2.4-.6-2.4-1.8 0-1.2.8-1.9 2.4-1.9h3l-.1 1.2zm7.6-5.6c1 0 1.6.3 2.4 1.2l1-1c-1.1-1.2-2-1.6-3.5-1.6-2.7 0-4.7 1.8-4.7 5.5 0 3.6 2 5.5 4.7 5.5 1.5 0 2.4-.4 3.5-1.6l-1.1-1c-.8.9-1.4 1.2-2.4 1.2s-1.9-.4-2.5-1.2c-.5-.7-.7-1.5-.7-2.9 0-1.3.2-2.2.7-2.9.7-.8 1.6-1.2 2.6-1.2zm13.4-1.3H69l-4.8 4.7V9.1h-1.6v15.4h1.6v-3.9l1.9-1.9 3.6 5.8h1.9l-4.4-6.9 3.7-3.7zm7.3-.5c-1.6 0-2.7.6-3.4 1.4-1 1-1.3 2.3-1.3 4.3s.3 3.3 1.3 4.3c.7.7 1.8 1.4 3.4 1.4 1.6 0 2.8-.6 3.4-1.4 1-1 1.3-2.3 1.3-4.3s-.3-3.3-1.3-4.3c-.6-.8-1.7-1.4-3.4-1.4zm1.3 8.3c-.3.3-.7.5-1.3.5-.6 0-1-.2-1.3-.5-.6-.6-.6-1.6-.6-2.7 0-1.2.1-2.1.6-2.7.3-.3.7-.5 1.3-.5.6 0 1 .2 1.3.5.6.6.6 1.5.6 2.7.1 1.2 0 2.2-.6 2.7zm10.8-8.2l-2.2 6.9-2.3-6.9h-2.9L87 24.6h2.2l4.1-11.1h-3zm7.6-.1c-2.9 0-4.8 2-4.8 5.7 0 4.5 2.5 5.7 5.1 5.7 2 0 3.1-.6 4.2-1.7l-1.7-1.6c-.7.7-1.3 1-2.5 1-1.6 0-2.4-1-2.4-2.5h6.9v-1.2c0-3.2-1.7-5.4-4.8-5.4zM95.8 18c0-.5.1-.8.3-1.2.3-.7.9-1.2 1.9-1.2.9 0 1.6.5 1.9 1.2.2.4.2.7.3 1.2h-4.4zm11-3.4v-1.1h-2.7v11.1h2.8v-6.7c0-1.4.9-2 1.8-2 .7 0 1 .2 1.5.7l2.1-2.1c-.8-.8-1.5-1-2.6-1-1.3-.1-2.3.4-2.9 1.1zm6.3-2.3v12.3h2.8v-8.8h2v-2.1h-2v-1.2c0-.6.3-1 1-1h1.1V9.2h-1.6c-2.3 0-3.3 1.6-3.3 3.1zm16.2 1.1c-1.6 0-2.7.6-3.4 1.4-1 1-1.3 2.3-1.3 4.3s.3 3.3 1.3 4.3c.7.7 1.8 1.4 3.4 1.4 1.6 0 2.8-.6 3.4-1.4 1-1 1.3-2.3 1.3-4.3s-.3-3.3-1.3-4.3c-.6-.8-1.8-1.4-3.4-1.4zm1.3 8.3c-.3.3-.7.5-1.3.5-.6 0-1-.2-1.3-.5-.6-.6-.6-1.6-.6-2.7 0-1.2.1-2.1.6-2.7.3-.3.7-.5 1.3-.5.6 0 1 .2 1.3.5.6.6.6 1.5.6 2.7 0 1.2 0 2.2-.6 2.7zm16.5-8.2l-1.8 6.9-2.3-6.9h-2l-2.3 6.9-1.8-6.9H134l3.4 11.1h2.3l2.3-7 2.3 7h2.3l3.4-11.1h-2.9zM122 21.2V9.1h-2.8v12.3c0 1.6 1 3.2 3.2 3.2h1.6v-2.3h-1c-.7 0-1-.4-1-1.1zm-80.7-5.6l1.4-1.4h-3v-3.5h-1.6v11.1c0 1.6.9 2.9 2.7 2.9h1.1v-1.3h-.8c-1 0-1.5-.6-1.5-1.6v-6.1h1.7v-.1z" fill="#222426"></path><path fill="#BCBBBB" d="M21 27v-8h3v11H0V19h3v8z"></path><path d="M5.402 19.101l13.561 1.96.164-2.38-13.256-2.547-.469 2.967zM7.2 12.3l12 5.6 1.1-2.4-12-5.6-1.1 2.4zm3.4-5.9l10.2 8.5 1.7-2-10.2-8.5-1.7 2zM17.1.2L15 1.8l7.9 10.6 2.1-1.6L17.1.2zM5 25h14v-3H5v3z" fill="#F48024"></path></g></svg></a>
+                    </div>
+
+                    <nav class="-nav js-category _visible" data-name="default">
+                        <h5 class="-title"><a href="https://stackoverflow.com/" class="js-gps-track" data-gps-track="footer.click({ location: 2, link: 15})">Stack Overflow</a></h5>
+                        <ul class="-list">
+                            <li class="-item"><a href="https://stackoverflow.com/questions" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 16})">Questions</a></li>
+                                <li class="-item"><a href="https://stackoverflow.com/jobs" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 17})">Jobs</a></li>
+                                <li class="-item"><a href="https://stackoverflow.com/jobs/directory/developer-jobs" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 11})">Developer Jobs Directory</a></li>
+                                                            <li class="-item"><a href="https://stackoverflow.com/documentation" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 18})">Documentation</a></li>
+                            <li class="-item"><a href="https://stackoverflow.com/help" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 3 })">Help</a></li>
+                            <li class="-item"><a onclick="StackExchange.switchMobile(&quot;on&quot;)" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 12 })">Mobile</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="-nav js-category _visible" data-name="default">
+                        <h5 class="-title"><a href="https://www.stackoverflowbusiness.com/?utm_source=so-footer&amp;utm_medium=referral&amp;utm_campaign=brand-activation" class="js-gps-track" data-gps-track="footer.click({ location: 2, link: 19 })">Stack Overflow<br> Business</a></h5>
+                        <ul class="-list">
+                            <li class="-item"><a href="https://www.stackoverflowbusiness.com/talent?utm_source=so-footer&amp;utm_medium=referral&amp;utm_campaign=brand-activation" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 20 })">Talent</a></li>
+                            <li class="-item"><a href="https://www.stackoverflowbusiness.com/advertise?utm_source=so-footer&amp;utm_medium=referral&amp;utm_campaign=brand-activation" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 21 })">Ads</a></li>
+                            <li class="-item"><a href="https://www.stackoverflowbusiness.com/enterprise?utm_source=so-footer&amp;utm_medium=referral&amp;utm_campaign=brand-activation" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 22 })">Enterprise</a></li>
+                            <li class="-item"><a href="https://www.stackoverflowbusiness.com/insights?utm_source=so-footer&amp;utm_medium=referral&amp;utm_campaign=brand-activation" class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 23 })">Insights</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="-nav js-category _visible" data-name="default">
+                        <h5 class="-title"><a class="js-gps-track" data-gps-track="footer.click({ location: 2, link: 1 })" href="https://stackoverflow.com/company/about">Company</a></h5>
+                        <ul class="-list">
+                            <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 1 })" href="https://stackoverflow.com/company/about">About</a></li>
+                            <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 27 })" href="https://stackoverflow.com/company/press">Press</a></li>
+                            <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 9 })" href="https://stackoverflow.com/company/work-here">Work Here</a></li>
+                            <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 7 })" href="https://stackexchange.com/legal">Legal</a></li>
+                            <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 8 })" href="https://stackexchange.com/legal/privacy-policy">Privacy Policy</a></li>
+                            <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link: 13 })" href="https://stackoverflow.com/company/contact">Contact Us</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="-network g-row">
+                        <a href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" class="-back-trigger js-back"><svg role="icon" class="svg-icon iconArrowLeftAlt" width="18" height="18" viewBox="0 0 18 18"><path d="M10.582 16l1.41-1.41L6.402 9l5.59-5.59L10.582 2l-7 7z"></path></svg></a>
+                        <div>
+                            <h5 class="-title"><a href="https://stackexchange.com/">Stack Exchange<br> Network</a></h5>
+                            <ul class="-list">
+                                <li class="-item"><a href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" class="-link _expandable js-category-trigger js-gps-track" data-gps-track="footer.click({ location: 2, link: 24 })" data-target="Technology">Technology</a></li>
+                                <li class="-item"><a href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" class="-link _expandable js-category-trigger js-gps-track" data-gps-track="footer.click({ location: 2, link: 24 })" data-target="Life / Arts">Life / Arts</a></li>
+                                <li class="-item"><a href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" class="-link _expandable js-category-trigger js-gps-track" data-gps-track="footer.click({ location: 2, link: 24 })" data-target="Culture / Recreation">Culture / Recreation</a></li>
+                                <li class="-item"><a href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" class="-link _expandable js-category-trigger js-gps-track" data-gps-track="footer.click({ location: 2, link: 24 })" data-target="Science">Science</a></li>
+                                <li class="-item"><a href="https://stackoverflow.com/questions/4683093/beamer-how-to-show-images-as-step-by-step-images#" class="-link _expandable js-category-trigger js-gps-track" data-gps-track="footer.click({ location: 2, link: 24 })" data-target="Other">Other</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <nav class="-nav js-category" data-name="Technology">
+        <ul class="-list">
+                <li class="-item"><a href="https://stackoverflow.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                <li class="-item"><a href="https://serverfault.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="system and network administrators">Server Fault</a></li>
+                <li class="-item"><a href="https://superuser.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="computer enthusiasts and power users">Super User</a></li>
+                <li class="-item"><a href="https://webapps.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="power users of web applications">Web Applications</a></li>
+                <li class="-item"><a href="https://askubuntu.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                <li class="-item"><a href="https://webmasters.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="pro webmasters">Webmasters</a></li>
+                <li class="-item"><a href="https://gamedev.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="professional and independent game developers">Game Development</a></li>
+                    </ul></nav><nav class="-nav js-category" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://tex.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                <li class="-item"><a href="https://softwareengineering.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="professionals, academics, and students working within the systems development life cycle">Software Engineering</a></li>
+                <li class="-item"><a href="https://unix.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                <li class="-item"><a href="https://apple.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                <li class="-item"><a href="https://wordpress.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="WordPress developers and administrators">WordPress Development</a></li>
+                <li class="-item"><a href="https://gis.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                <li class="-item"><a href="https://electronics.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                    </ul></nav><nav class="-nav js-category" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://android.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                <li class="-item"><a href="https://security.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="information security professionals">Information Security</a></li>
+                <li class="-item"><a href="https://dba.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                <li class="-item"><a href="https://drupal.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="Drupal developers and administrators">Drupal Answers</a></li>
+                <li class="-item"><a href="https://sharepoint.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="SharePoint enthusiasts">SharePoint</a></li>
+                <li class="-item"><a href="https://ux.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="user experience researchers and experts">User Experience</a></li>
+                <li class="-item"><a href="https://datascience.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="Data science professionals, Machine Learning specialists, and those interested in learning more about the field">Data Science</a></li>
+                    </ul></nav><nav class="-nav js-category" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://mathematica.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="users of Wolfram Mathematica">Mathematica</a></li>
+                <li class="-item"><a href="https://salesforce.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                <li class="-item"><a href="https://expressionengine.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="administrators, end users, developers and designers for ExpressionEngine® CMS">ExpressionEngine® Answers</a></li>
+                <li class="-item"><a href="https://blender.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="people who use Blender to create 3D graphics, animations, or games">Blender</a></li>
+                <li class="-item"><a href="https://networkengineering.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="network engineers">Network Engineering</a></li>
+                <li class="-item"><a href="https://crypto.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="software developers, mathematicians and others interested in cryptography">Cryptography</a></li>
+                <li class="-item"><a href="https://codereview.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="peer programmer code reviews">Code Review</a></li>
+                    </ul></nav><nav class="-nav js-category" data-name="Technology"><ul class="-list">
+                <li class="-item"><a href="https://magento.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="users of the Magento e-Commerce platform">Magento</a></li>
+                <li class="-item"><a href="https://softwarerecs.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="people seeking specific software recommendations">Software Recommendations</a></li>
+                <li class="-item"><a href="https://dsp.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="practitioners of the art and science of signal, image and video processing">Signal Processing</a></li>
+                <li class="-item"><a href="https://emacs.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="those using, extending or developing Emacs">Emacs</a></li>
+                <li class="-item"><a href="https://raspberrypi.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="users and developers of hardware and software for Raspberry Pi">Raspberry Pi</a></li>
+                <li class="-item"><a href="https://codegolf.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="programming puzzle enthusiasts and code golfers">Programming Puzzles &amp; Code Golf</a></li>
+                <li class="-item"><a href="https://ethereum.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="users of Ethereum, the decentralized application platform and smart contract enabled blockchain">Ethereum</a></li>
+                            <li class="-item">
+                    <a href="https://stackexchange.com/sites#technology" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 26 })">
+                        <strong>
+                            more (27)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </nav>
+    <nav class="-nav js-category" data-name="Life / Arts">
+        <ul class="-list">
+                <li class="-item"><a href="https://photo.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                <li class="-item"><a href="https://scifi.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                <li class="-item"><a href="https://graphicdesign.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                <li class="-item"><a href="https://movies.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                <li class="-item"><a href="https://music.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="musicians, students, and enthusiasts">Music: Practice &amp; Theory</a></li>
+                <li class="-item"><a href="https://worldbuilding.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="writers/artists using science, geography and culture to construct imaginary worlds and settings">Worldbuilding</a></li>
+                <li class="-item"><a href="https://cooking.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                    </ul></nav><nav class="-nav js-category" data-name="Life / Arts"><ul class="-list">
+                <li class="-item"><a href="https://diy.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="contractors and serious DIYers">Home Improvement</a></li>
+                <li class="-item"><a href="https://money.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                <li class="-item"><a href="https://academia.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="academics and those enrolled in higher education">Academia</a></li>
+                <li class="-item"><a href="https://law.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="legal professionals, students, and others with experience or interest in law">Law</a></li>
+                            <li class="-item">
+                    <a href="https://stackexchange.com/sites#lifearts" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 26 })">
+                        <strong>
+                            more (16)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </nav>
+    <nav class="-nav js-category" data-name="Culture / Recreation">
+        <ul class="-list">
+                <li class="-item"><a href="https://english.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                <li class="-item"><a href="https://skeptics.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="scientific skepticism">Skeptics</a></li>
+                <li class="-item"><a href="https://judaism.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                <li class="-item"><a href="https://travel.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="road warriors and seasoned travelers">Travel</a></li>
+                <li class="-item"><a href="https://christianity.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                <li class="-item"><a href="https://ell.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="speakers of other languages learning English">English Language Learners</a></li>
+                <li class="-item"><a href="https://japanese.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="students, teachers, and linguists wanting to discuss the finer points of the Japanese language">Japanese Language</a></li>
+                    </ul></nav><nav class="-nav js-category" data-name="Culture / Recreation"><ul class="-list">
+                <li class="-item"><a href="https://gaming.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                <li class="-item"><a href="https://bicycles.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                <li class="-item"><a href="https://rpg.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                <li class="-item"><a href="https://anime.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="anime and manga fans">Anime &amp; Manga</a></li>
+                <li class="-item"><a href="https://puzzling.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="those who create, solve, and study puzzles">Puzzling</a></li>
+                <li class="-item"><a href="https://mechanics.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="mechanics and DIY enthusiast owners of cars, trucks, and motorcycles">Motor Vehicle Maintenance &amp; Repair</a></li>
+                            <li class="-item">
+                    <a href="https://stackexchange.com/sites#culturerecreation" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 26 })">
+                        <strong>
+                            more (32)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </nav>
+    <nav class="-nav js-category" data-name="Science">
+        <ul class="-list">
+                <li class="-item"><a href="https://mathoverflow.net/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="professional mathematicians">MathOverflow</a></li>
+                <li class="-item"><a href="https://math.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                <li class="-item"><a href="https://stats.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                <li class="-item"><a href="https://cstheory.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                <li class="-item"><a href="https://physics.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="active researchers, academics and students of physics">Physics</a></li>
+                <li class="-item"><a href="https://chemistry.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="scientists, academics, teachers and students">Chemistry</a></li>
+                <li class="-item"><a href="https://biology.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="biology researchers, academics, and students">Biology</a></li>
+                    </ul></nav><nav class="-nav js-category" data-name="Science"><ul class="-list">
+                <li class="-item"><a href="https://cs.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="students, researchers and practitioners of computer science">Computer Science</a></li>
+                <li class="-item"><a href="https://philosophy.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="those interested in the study of the fundamental nature of knowledge, reality, and existence">Philosophy</a></li>
+                            <li class="-item">
+                    <a href="https://stackexchange.com/sites#science" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 26 })">
+                        <strong>
+                            more (10)
+                        </strong>
+                    </a>
+                </li>
+        </ul>
+    </nav>
+    <nav class="-nav js-category" data-name="Other">
+        <ul class="-list">
+                <li class="-item"><a href="https://meta.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                <li class="-item"><a href="https://stackapps.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                <li class="-item"><a href="https://api.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="programmatic interaction with Stack Exchange sites">API</a></li>
+                <li class="-item"><a href="https://data.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="querying Stack Exchange data using SQL">Data</a></li>
+                <li class="-item"><a href="https://area51.stackexchange.com/" class="-link js-gps-track" data-gps-track="footer.click({ location: 29, link: 25 })" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                    </ul>
+    </nav>
+                    <div class="-copyright text-right">
+                        <div class="g-column jc-sp-between">
+                            <ul class="-list">
+                                <li class="-item"><a class="js-gps-track -link" data-gps-track="footer.click({ location: 2, link:4 })" href="https://stackoverflow.blog/?blb=1">Blog</a></li>
+                                <li class="-item"><a href="https://www.facebook.com/officialstackoverflow/" class="-link">Facebook</a></li>
+                                <li class="-item"><a href="https://twitter.com/stackoverflow" class="-link">Twitter</a></li>
+                                <li class="-item"><a href="https://linkedin.com/company/stack-overflow" class="-link">LinkedIn</a></li>
+                            </ul>
+
+                            <div>
+                                <p>
+                                    site design / logo © 2017 Stack Exchange Inc; user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a>
+                                    with <a href="https://stackoverflow.blog/2009/06/25/attribution-required/" rel="license">attribution required</a>.
+                                    <span id="svnrev">rev 2017.7.17.1283</span>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                            </div>
+        </footer>
+
+    <noscript>
+        &lt;div id="noscript-warning"&gt;Stack Overflow works best with JavaScript enabled
+            &lt;img src="https://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"&gt;
+        &lt;/div&gt;
+    </noscript>
+<script>var z=document.createElement("script");z.type="text/javascript",z.async=!0,z.src="https://static.adzerk.net/ados.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(z,s);</script>
+<script>
+var ados = ados || {};
+ados.run = ados.run || [];
+
+
+ados.run.push(function () {
+    setTimeout(function () { $("#adzerk-user-match").remove(); }, window.AUMIframeDone ? 0 : 2000);
+    ados_setKeywords('image,latex,beamer');; ados_load();
+});   
+
+</script>
+
+    <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+                ga('create', 'UA-5620270-1');
+                ga('create', 'UA-5620270-59', {name: 'pageData', sampleRate: 5 });
+                ga('set', 'dimension2', '|image|latex|beamer|');
+                ga('pageData.set', 'dimension2', '|image|latex|beamer|');
+                ga('send', 'pageview');
+                ga('pageData.send', 'pageview');
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+                qc.async = true;
+                qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                s.parentNode.insertBefore(qc, s);
+                _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+                            var sc=document.createElement('script');
+                sc.async=true;
+                sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+                s.parentNode.insertBefore(sc, s);
+                _comscore.push({ c1: "2", c2: "17440561" });
+        })();
+
+    </script>
+        
+    
+            <script type="text/javascript">
+                
+                (function(appendChild) {
+                    Node.prototype.appendChild = function() {
+                        var parent = this;
+                        var newNode = arguments[0];
+                        if (parent.nodeName === 'HEAD'
+                            && newNode
+                            && newNode.nodeName === 'SCRIPT'
+                            && newNode.src) {
+                            
+                            window.setTimeout(function() {
+                                var result = newNode.src.match(/^https:\/\/maps\.googleapis\.com\/maps\/api\/place\/js\/(\w+)Service\./i) || [];
+                                var service = result[1];
+                                if (service) {
+                                    if (service === 'Autocompletion') service =  2;
+                                    else if (service === 'Place') service = 1;
+                                    else service = 0;
+                                    StackExchange.using('gps', function() {
+                                        StackExchange.gps.track('google_maps_places_api.call', { service: service });
+                                    });
+                                }
+                            }, 0);
+                        }
+                        return appendChild.apply(this, arguments);
+                    };
+                })(Node.prototype.appendChild);
+            </script>
+    
+
+<script async="" src="./latex - Beamer_ How to show images as step-by-step images - Stack Overflow_files/clc.min.js"></script><img src="https://clc.stackoverflow.com/timeout.gif" style="display: none;"></body></html>
